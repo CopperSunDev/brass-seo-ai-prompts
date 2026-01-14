@@ -1,52 +1,53 @@
 # Brass-SEO AI Prompts
 
-**4 Professional AI Prompts for SEO Tasks**
+🎯 **4 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
-## Quick Start
+## 🚀 Quick Start
 
-1. Browse prompts in [`/prompts/markdown/`](./prompts/markdown/)
-2. Copy the prompt text
-3. Paste into ChatGPT, Claude, or your preferred AI
-4. Replace `[placeholders]` with your specific information
+1. **Choose Your Format**: Use `prompts/markdown/` for reading or `prompts/yaml/` for automation
+2. **Select a Prompt**: Browse categories below or see the [complete guide](https://brass-seo.com/ai-prompts-guide-for-seo)
+3. **Copy & Customize**: Replace `[placeholders]` with your specific information
+4. **Run in Any AI**: Works with ChatGPT, Claude, Gemini, and all AI chat systems
 
-## Prompt Categories
+## 📋 Prompt Categories
 
-### Technical SEO (2 prompts)
+### 🔧 Technical SEO (2 prompts)
 
 Audit site performance, crawlability, and technical issues.
 
-- **[Comprehensive Site Audit](./prompts/markdown/technical-seo/comprehensive-site-audit.md)** - Full technical SEO analysis with prioritized recommendations
-- **[Core Web Vitals Analysis](./prompts/markdown/technical-seo/core-web-vitals-analysis.md)** - LCP, FID/INP, and CLS optimization guidance
+- **[Comprehensive Site Audit](./prompts/markdown/technical-seo/comprehensive-site-audit.md)** - Full technical SEO analysis covering crawlability, indexation, speed, mobile, security, and structured data
+- **[Core Web Vitals Analysis](./prompts/markdown/technical-seo/core-web-vitals-analysis.md)** - Deep-dive into LCP, INP, and CLS with specific optimization recommendations
 
-### Content Optimization (2 prompts)
+[📖 View Details](https://brass-seo.com/blog/technical-seo-ai-prompts) | [📁 Browse Files](./prompts/markdown/technical-seo/)
+
+### 📝 Content Optimization (2 prompts)
 
 Improve on-page SEO and content quality.
 
-- **[Title & Meta Description Generator](./prompts/markdown/content-optimization/title-meta-description-generator.md)** - Create SEO-optimized titles and descriptions
-- **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities
+- **[Title & Meta Description Generator](./prompts/markdown/content-optimization/title-meta-description-generator.md)** - Create SEO-optimized titles and descriptions with multiple variations and character counts
+- **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities by analyzing competitor coverage
 
-## Dual Format Support
+[📖 View Details](https://brass-seo.com/blog/content-optimization-ai-prompts) | [📁 Browse Files](./prompts/markdown/content-optimization/)
 
-Every prompt is available in two formats:
+## 🔧 Using YAML Formats
 
-- **Markdown** (`/prompts/markdown/`) - Human-readable with full documentation
-- **YAML** (`/prompts/yaml/`) - Machine-readable for automation and API integration
+For automation and integration, each prompt is available in structured YAML format:
 
-## Usage Examples
+```yaml
+# Example usage
+metadata:
+  title: "Comprehensive Site Audit"
+  category: "technical-seo"
+  version: "1.0"
 
-### With ChatGPT/Claude
+prompt_text: |
+  Analyze [website URL] for technical SEO issues...
 
+resources:
+  detailed_guide: "https://brass-seo.com/blog/technical-seo-ai-prompts"
 ```
-1. Open the markdown file for your desired prompt
-2. Copy the entire prompt text
-3. Paste into your AI chat
-4. Replace [website URL], [keyword], etc. with your specifics
-5. Review and refine the AI's output
-```
-
-### Programmatic Access
 
 ```python
 import yaml
@@ -57,18 +58,31 @@ with open('prompts/yaml/technical-seo/comprehensive-site-audit.yml') as f:
 print(prompt['prompt_text'])
 ```
 
-## About Brass-SEO
+## 🎯 Best Practices
 
-[Brass-SEO](https://brass-seo.com) provides AI-powered SEO analysis tools. Connect your Google Search Console and GA4 to get actionable insights about your website's performance.
+### For Best Results:
+1. **Provide context** - Include PageSpeed Insights data, GSC reports, or competitor URLs when relevant
+2. **Be specific** - Replace all placeholders with actual values, not generic examples
+3. **Combine prompts** - Use multiple prompts for comprehensive analysis (audit first, then deep-dive into specific issues)
+4. **Iterate and refine** - Adjust prompts based on your specific industry and site type
 
-## License
+### Recommended Workflow:
+1. **Run Site Audit** first to identify major issues
+2. **Deep-dive** into specific problems (Core Web Vitals, content gaps, etc.)
+3. **Generate optimizations** (titles, meta descriptions) based on findings
+4. **Prioritize fixes** by impact and effort
+5. **Re-audit** after implementing changes
 
-MIT License - Use these prompts freely in your projects.
+## 🔗 Resources
 
-## Contributing
+- **🎯 Complete Guide**: [Brass-SEO AI Prompts Guide](https://brass-seo.com/ai-prompts-guide-for-seo)
+- **📊 SEO Analysis**: [Brass-SEO Dashboard](https://brass-seo.com/dashboard)
+- **📚 Blog Posts**: Detailed guides for each prompt category
 
-We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+## 📄 License
+
+MIT License - Feel free to use, modify, and distribute these prompts for any purpose.
 
 ---
 
-**Created by [Brass-SEO](https://brass-seo.com)** | [Full Prompt Guide](https://brass-seo.com/ai-prompts-guide-for-seo)
+**Created by [Brass-SEO](https://brass-seo.com)** - AI-powered SEO analysis for small businesses.

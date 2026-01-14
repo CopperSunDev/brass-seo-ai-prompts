@@ -1,0 +1,90 @@
+metadata:
+  id: "content-gap-analysis"
+  title: "Content Gap Analysis"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-01-14"
+
+description: "Identify content opportunities by analyzing competitor coverage gaps across topics, keywords, formats, depth, and search intent."
+
+prompt_text: |
+  Perform a content gap analysis comparing my website to competitors:
+
+  My Website: [your website URL]
+  Competitors: [competitor 1 URL], [competitor 2 URL], [competitor 3 URL]
+  Industry/Niche: [your industry]
+  Target Audience: [describe your audience]
+
+  Analyze and identify:
+
+  1. TOPIC GAPS
+     - Topics competitors cover that I don't
+     - Subtopics within my existing content that need expansion
+     - Trending topics in my niche I'm missing
+     - Prioritize by search volume and competition level
+
+  2. KEYWORD GAPS
+     - Keywords competitors rank for (positions 1-20) that I don't target
+     - Long-tail variations I'm missing
+     - Question-based keywords not addressed
+     - Featured snippet opportunities
+
+  3. CONTENT FORMAT GAPS
+     - Content types competitors use (guides, tools, videos, infographics)
+     - Interactive content opportunities
+     - Resource pages or link-worthy assets missing
+     - User-generated content possibilities
+
+  4. CONTENT DEPTH GAPS
+     - Topics where competitors have more comprehensive coverage
+     - Areas where my content is thin or outdated
+     - Missing supporting content (FAQs, case studies, examples)
+
+  5. INTENT GAPS
+     - Search intents not served (informational, commercial, transactional)
+     - Funnel stages with missing content
+     - User questions left unanswered
+
+  For each gap identified, provide:
+  - Priority level (High/Medium/Low)
+  - Estimated search volume range
+  - Competition difficulty
+  - Suggested content title
+  - Recommended word count/format
+  - Key points to cover
+
+  Create a 90-day content plan addressing the top 10 gaps.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Replace [your website URL] with your site"
+  - "Add 2-3 competitor URLs you want to analyze against"
+  - "Specify your industry and target audience"
+  - "For best results, include any keyword data from SEO tools"
+
+placeholders:
+  - name: "[your website URL]"
+    description: "Your website's URL"
+  - name: "[competitor 1 URL], [competitor 2 URL], [competitor 3 URL]"
+    description: "URLs of 2-3 direct competitors"
+  - name: "[your industry]"
+    description: "Your industry or niche (e.g., SaaS, e-commerce, B2B services)"
+  - name: "[describe your audience]"
+    description: "Brief description of your target audience"
+
+expected_output: "Categorized gap analysis, prioritized opportunities, 90-day content calendar, and specific content briefs for top gaps."
+
+tips:
+  - "Include your top 3-5 direct competitors"
+  - "Combine with SEMrush or Ahrefs gap data for accuracy"
+  - "Focus on gaps where you have expertise"
+  - "Revisit quarterly as competitive landscape changes"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "title-meta-description-generator"

@@ -1,0 +1,75 @@
+metadata:
+  id: "title-meta-description-generator"
+  title: "Title Tag & Meta Description Generator"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-01-14"
+
+description: "Generate SEO-optimized title tags and meta descriptions with multiple variations, character counts, and strategic recommendations."
+
+prompt_text: |
+  Generate SEO-optimized title tags and meta descriptions for the following page:
+
+  Page URL: [URL]
+  Primary Keyword: [primary keyword]
+  Secondary Keywords: [secondary keywords]
+  Page Type: [homepage/product/service/blog/category]
+  Brand Name: [brand name]
+
+  Create 5 title tag variations:
+  - Keep under 60 characters (display limit)
+  - Include primary keyword near the beginning
+  - Make each unique in approach (question, benefit, action, etc.)
+  - Include brand name where appropriate
+
+  Create 5 meta description variations:
+  - Keep between 150-160 characters
+  - Include primary keyword naturally
+  - Add a clear call-to-action
+  - Highlight unique value proposition
+
+  For each variation, provide:
+  - Character count
+  - Keyword position
+  - Emotional appeal used (curiosity, urgency, trust, etc.)
+  - Best use case (high competition, local, branded search, etc.)
+
+  Also suggest:
+  - Title tag formula that works best for this page type
+  - A/B testing recommendations
+  - Common mistakes to avoid for this niche
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Replace [URL] with the page you're optimizing"
+  - "Fill in your target keywords and brand name"
+  - "Select the appropriate page type"
+
+placeholders:
+  - name: "[URL]"
+    description: "The full URL of the page to optimize"
+  - name: "[primary keyword]"
+    description: "The main keyword you want to rank for"
+  - name: "[secondary keywords]"
+    description: "Supporting keywords to include where possible"
+  - name: "[homepage/product/service/blog/category]"
+    description: "The type of page being optimized"
+  - name: "[brand name]"
+    description: "Your brand or company name"
+
+expected_output: "5 title tag variations and 5 meta description variations with character counts, strategic recommendations, and A/B testing suggestions."
+
+tips:
+  - "Test variations with Google SERP simulators"
+  - "Check competitor titles in the same SERP"
+  - "Consider search intent when choosing variations"
+  - "Monitor CTR changes after implementation"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "content-gap-analysis"

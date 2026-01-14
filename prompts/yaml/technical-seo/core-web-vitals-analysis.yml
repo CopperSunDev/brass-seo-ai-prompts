@@ -1,0 +1,92 @@
+metadata:
+  id: "core-web-vitals-analysis"
+  title: "Core Web Vitals Analysis"
+  category: "technical-seo"
+  version: "1.0"
+  created: "2026-01-14"
+
+description: "Deep-dive into Core Web Vitals performance with specific optimization recommendations for LCP, INP, and CLS."
+
+prompt_text: |
+  Analyze the Core Web Vitals for [website URL] and provide optimization recommendations:
+
+  1. LARGEST CONTENTFUL PAINT (LCP)
+     Target: < 2.5 seconds
+
+     Analyze:
+     - What is the LCP element? (hero image, heading, video)
+     - Server response time (TTFB)
+     - Render-blocking resources (CSS, JS)
+     - Image optimization status
+     - Lazy loading implementation
+
+     Provide specific fixes for:
+     - Preloading critical resources
+     - Optimizing the LCP element
+     - Reducing server response time
+     - Eliminating render-blocking resources
+
+  2. INTERACTION TO NEXT PAINT (INP)
+     Target: < 200ms
+
+     Analyze:
+     - JavaScript execution time
+     - Third-party script impact
+     - Event handler efficiency
+     - Main thread blocking
+
+     Provide specific fixes for:
+     - Code splitting opportunities
+     - Deferring non-critical JS
+     - Web worker usage
+     - Third-party script optimization
+
+  3. CUMULATIVE LAYOUT SHIFT (CLS)
+     Target: < 0.1
+
+     Analyze:
+     - Images without dimensions
+     - Ads/embeds without reserved space
+     - Dynamically injected content
+     - Web fonts causing FOIT/FOUT
+
+     Provide specific fixes for:
+     - Adding explicit dimensions
+     - Reserving space for dynamic content
+     - Font loading optimization
+     - Animation best practices
+
+  For each metric, provide:
+  - Current estimated score
+  - Primary cause of poor performance
+  - Code examples for fixes
+  - Expected improvement after optimization
+
+  Include implementation priority (Quick Win, Medium Effort, Major Project).
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Replace [website URL] with the page you want to analyze"
+  - "Include PageSpeed Insights data for best results"
+  - "Specify mobile-only, desktop-only, or both"
+
+placeholders:
+  - name: "[website URL]"
+    description: "The full URL of the page to analyze (e.g., https://example.com/page)"
+
+expected_output: "Metric-by-metric analysis with root cause identification, code snippets for fixes, and prioritized action plan."
+
+tips:
+  - "Test both mobile and desktop separately"
+  - "Focus on the worst-performing metric first"
+  - "Use Chrome DevTools Performance panel for detailed timing"
+  - "Re-test after each fix to measure improvement"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "comprehensive-site-audit"

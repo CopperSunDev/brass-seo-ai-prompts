@@ -1,0 +1,98 @@
+# Brass-SEO AI Prompt Schema
+# Version: 1.0
+# Use this schema to validate prompt YAML files
+
+type: object
+required:
+  - metadata
+  - description
+  - prompt_text
+
+properties:
+  metadata:
+    type: object
+    required:
+      - id
+      - title
+      - category
+      - version
+      - created
+    properties:
+      id:
+        type: string
+        description: "Unique identifier in kebab-case"
+        pattern: "^[a-z0-9-]+$"
+      title:
+        type: string
+        description: "Human-readable title"
+      category:
+        type: string
+        enum:
+          - technical-seo
+          - content-optimization
+          - keyword-research
+          - link-building
+          - local-seo
+          - analytics-reporting
+          - competitor-analysis
+      version:
+        type: string
+        pattern: "^[0-9]+\\.[0-9]+$"
+      created:
+        type: string
+        format: date
+      updated:
+        type: string
+        format: date
+
+  description:
+    type: string
+    description: "Brief description of what this prompt does"
+    minLength: 10
+    maxLength: 200
+
+  prompt_text:
+    type: string
+    description: "The actual prompt content"
+    minLength: 50
+
+  usage:
+    type: array
+    items:
+      type: string
+    description: "Step-by-step usage instructions"
+
+  placeholders:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+    description: "Variables that users should replace"
+
+  expected_output:
+    type: string
+    description: "What the AI should return"
+
+  tips:
+    type: array
+    items:
+      type: string
+    description: "Helpful tips for better results"
+
+  resources:
+    type: object
+    properties:
+      website:
+        type: string
+        format: uri
+      guide:
+        type: string
+        format: uri
+      related_prompts:
+        type: array
+        items:
+          type: string

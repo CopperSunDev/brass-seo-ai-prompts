@@ -1,0 +1,77 @@
+metadata:
+  id: "ai-cost-calculator"
+  title: "AI Cost Calculator"
+  category: "ai-tools"
+  version: "1.0"
+  created: "2026-01-30"
+
+description: "Calculate and compare AI model costs for your specific usage patterns with break-even analysis and optimization recommendations."
+
+prompt_text: |
+  You are an AI cost optimization specialist. Help me calculate and compare costs across different AI models for my production application.
+
+  MY USAGE PATTERN:
+  - Average input tokens per request: [number or estimate]
+  - Average output tokens per request: [number or estimate]
+  - Requests per day: [number]
+  - Requests per month: [number]
+
+  MODELS TO COMPARE:
+  1. [Model 1 name] - Input: $[X]/MTok, Output: $[Y]/MTok
+  2. [Model 2 name] - Input: $[X]/MTok, Output: $[Y]/MTok
+  3. [Model 3 name] - Input: $[X]/MTok, Output: $[Y]/MTok
+
+  ANALYSIS NEEDED:
+
+  1. COST CALCULATION
+     - Calculate cost per request for each model
+     - Calculate daily cost for each model
+     - Calculate monthly cost for each model
+     - Show the math clearly
+
+  2. COMPARISON TABLE
+     - Create a side-by-side comparison
+     - Rank by total monthly cost
+     - Calculate percentage difference from cheapest
+
+  3. BREAK-EVEN ANALYSIS
+     - At what volume does Model A become cheaper than Model B?
+     - What's the cost difference at 2x, 5x, 10x my current volume?
+
+  4. OPTIMIZATION RECOMMENDATIONS
+     - Identify opportunities to reduce token usage
+     - Suggest prompt caching strategies if applicable
+     - Recommend when to use cheaper models for specific query types
+
+  Format as a clear financial analysis with actionable recommendations.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Gather your token usage data from logs or estimates"
+  - "Look up current pricing for models you're considering"
+  - "Paste the prompt with your numbers filled in"
+  - "Use the analysis to make data-driven model decisions"
+
+placeholders:
+  - name: "[number or estimate]"
+    description: "Token counts from your logs or reasonable estimates"
+  - name: "[Model name]"
+    description: "The AI model you want to compare"
+  - name: "$[X]/MTok, $[Y]/MTok"
+    description: "Input and output pricing per million tokens"
+
+expected_output: "A financial analysis with cost calculations, comparison table, break-even points, and optimization recommendations"
+
+tips:
+  - "Most AI gateways provide token usage in their dashboards"
+  - "Include reasoning tokens if your models use chain-of-thought"
+  - "Factor in prompt caching discounts (typically 90% off cached tokens)"
+  - "Consider fallback model costs in your calculations"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  blog_post: "https://brass-seo.com/blog/ai-model-evaluation-production-apps"

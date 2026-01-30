@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **4 Professional AI Prompts for SEO Tasks**
+🎯 **6 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -30,6 +30,15 @@ Improve on-page SEO and content quality.
 - **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities by analyzing competitor coverage
 
 [📖 View Details](https://brass-seo.com/blog/content-optimization-ai-prompts) | [📁 Browse Files](./prompts/markdown/content-optimization/)
+
+### 🤖 AI Tools (2 prompts)
+
+Evaluate and optimize AI model usage for production applications.
+
+- **[Model Evaluation Framework](./prompts/markdown/ai-tools/model-evaluation-framework.md)** - Design rigorous testing frameworks for selecting AI models with test queries, scoring rubrics, and comparison frameworks
+- **[AI Cost Calculator](./prompts/markdown/ai-tools/ai-cost-calculator.md)** - Calculate and compare AI model costs with break-even analysis and optimization recommendations
+
+[📖 View Details](https://brass-seo.com/blog/ai-model-evaluation-production-apps) | [📁 Browse Files](./prompts/markdown/ai-tools/)
 
 ## 🔧 Using YAML Formats
 

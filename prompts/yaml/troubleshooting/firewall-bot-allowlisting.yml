@@ -18,7 +18,9 @@ prompt_text: |
 
   My website uses [REPLACE WITH YOUR FIREWALL/HOST - e.g., Cloudflare, Vercel, Sucuri, Wordfence, AWS WAF, Azure Front Door].
 
-  Please give me step-by-step instructions to create a firewall rule that allows requests from this bot (matching the User-Agent string above) to bypass bot protection and challenge pages. Include where to find the setting in the dashboard and what values to enter.
+  Please look up the latest documentation for my firewall provider and give me step-by-step instructions to create a rule that allows requests from this bot (matching the User-Agent string above) to bypass bot protection and challenge pages.
+
+  Walk me through one step at a time. After each step, wait for me to confirm before moving on — I may have questions or see something different on my screen.
 
   ---
   Prompt by Brass-SEO (brass-seo.com)

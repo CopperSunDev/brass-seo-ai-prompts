@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **6 Professional AI Prompts for SEO Tasks**
+🎯 **7 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -39,6 +39,14 @@ Evaluate and optimize AI model usage for production applications.
 - **[AI Cost Calculator](./prompts/markdown/ai-tools/ai-cost-calculator.md)** - Calculate and compare AI model costs with break-even analysis and optimization recommendations
 
 [📖 View Details](https://brass-seo.com/blog/ai-model-evaluation-production-apps) | [📁 Browse Files](./prompts/markdown/ai-tools/)
+
+### 🛡️ Troubleshooting (1 prompt)
+
+Solve common setup and configuration issues.
+
+- **[Firewall Bot Allowlisting](./prompts/markdown/troubleshooting/firewall-bot-allowlisting.md)** - Get step-by-step instructions to allow an SEO bot through your firewall or WAF
+
+[📖 View Details](https://brass-seo.com/allow-bot) | [📁 Browse Files](./prompts/markdown/troubleshooting/)
 
 ## 🔧 Using YAML Formats
 

@@ -1,0 +1,47 @@
+metadata:
+  id: "firewall-bot-allowlisting"
+  title: "Firewall Bot Allowlisting"
+  category: "troubleshooting"
+  version: "1.0"
+  created: "2026-02-02"
+
+description: "Get step-by-step instructions to allow a specific bot through your website's firewall or WAF."
+
+prompt_text: |
+  I need to allow a specific SEO bot through my website's firewall.
+
+  Bot details:
+  - Name: Brass-SEO
+  - User-Agent: Brass-SEO/1.0 (+https://brass-seo.com/bot)
+  - Purpose: SEO analysis tool that I've authorized to crawl my site
+  - More info: https://brass-seo.com/bot
+
+  My website uses [REPLACE WITH YOUR FIREWALL/HOST - e.g., Cloudflare, Vercel, Sucuri, Wordfence, AWS WAF, Azure Front Door].
+
+  Please give me step-by-step instructions to create a firewall rule that allows requests from this bot (matching the User-Agent string above) to bypass bot protection and challenge pages. Include where to find the setting in the dashboard and what values to enter.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Replace the firewall/host placeholder with your actual provider"
+  - "Paste the prompt into ChatGPT, Claude, or any AI assistant"
+  - "Follow the step-by-step instructions the AI provides"
+
+placeholders:
+  - name: "[REPLACE WITH YOUR FIREWALL/HOST]"
+    description: "Your firewall or hosting provider (e.g., Cloudflare, Vercel, Sucuri, Wordfence, AWS WAF, Azure Front Door)"
+
+expected_output: "A walkthrough with exact dashboard locations, values to enter, and how to test the rule."
+
+tips:
+  - "If you don't know which firewall you have, mention your hosting provider and ask the AI to identify it"
+  - "You can add your own bot details by replacing the Bot details section"
+  - "Test after creating the rule by checking if the bot can access your site"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  firewall_guide: "https://brass-seo.com/allow-bot"
+  related_prompts: []

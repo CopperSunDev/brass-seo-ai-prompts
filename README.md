@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **7 Professional AI Prompts for SEO Tasks**
+🎯 **10 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -22,12 +22,13 @@ Audit site performance, crawlability, and technical issues.
 
 [📖 View Details](https://brass-seo.com/blog/technical-seo-ai-prompts) | [📁 Browse Files](./prompts/markdown/technical-seo/)
 
-### 📝 Content Optimization (2 prompts)
+### 📝 Content Optimization (3 prompts)
 
 Improve on-page SEO and content quality.
 
 - **[Title & Meta Description Generator](./prompts/markdown/content-optimization/title-meta-description-generator.md)** - Create SEO-optimized titles and descriptions with multiple variations and character counts
 - **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities by analyzing competitor coverage
+- **[Keyword Opportunity Finder](./prompts/markdown/content-optimization/keyword-opportunity-finder.md)** - Find quick wins and strategic keyword targets from your GSC data
 
 [📖 View Details](https://brass-seo.com/blog/content-optimization-ai-prompts) | [📁 Browse Files](./prompts/markdown/content-optimization/)
 
@@ -40,11 +41,20 @@ Evaluate and optimize AI model usage for production applications.
 
 [📖 View Details](https://brass-seo.com/blog/ai-model-evaluation-production-apps) | [📁 Browse Files](./prompts/markdown/ai-tools/)
 
-### 🛡️ Troubleshooting (1 prompt)
+### 📊 SEO Analysis (1 prompt)
+
+Analyze your traffic data and turn numbers into actionable insights.
+
+- **[GA4 Traffic Analysis](./prompts/markdown/seo-analysis/ga4-traffic-analysis.md)** - Analyze GA4 data for traffic health, engagement quality, and opportunities
+
+[📖 View Details](https://brass-seo.com/blog/how-to-read-your-ga4-traffic-report) | [📁 Browse Files](./prompts/markdown/seo-analysis/)
+
+### 🛡️ Troubleshooting (2 prompts)
 
 Solve common setup and configuration issues.
 
 - **[Firewall Bot Allowlisting](./prompts/markdown/troubleshooting/firewall-bot-allowlisting.md)** - Get step-by-step instructions to allow an SEO bot through your firewall or WAF
+- **[Indexing Issue Diagnosis](./prompts/markdown/troubleshooting/indexing-issue-diagnosis.md)** - Diagnose and fix pages not appearing in Google search results
 
 [📖 View Details](https://brass-seo.com/allow-bot) | [📁 Browse Files](./prompts/markdown/troubleshooting/)
 

@@ -1,0 +1,88 @@
+metadata:
+  id: "ga4-traffic-analysis"
+  title: "GA4 Traffic Analysis"
+  category: "seo-analysis"
+  version: "1.0"
+  created: "2026-02-09"
+
+description: "Analyze GA4 traffic data to understand performance trends, identify engagement issues, and get actionable SEO recommendations."
+
+prompt_text: |
+  Analyze the following GA4 traffic data for my website and provide actionable SEO recommendations:
+
+  Website: [your website URL]
+  Time Period: [e.g., last 30 days, last quarter]
+  Industry: [your industry]
+
+  GA4 Data (paste from your reports or describe):
+  - Total Sessions: [number]
+  - Organic Search Sessions: [number]
+  - Engagement Rate: [percentage]
+  - Bounce Rate: [percentage]
+  - Top Landing Pages: [list your top 5-10 landing pages with their sessions and engagement rates]
+  - Traffic Channels Breakdown: [organic, direct, referral, social percentages]
+
+  Please analyze:
+
+  1. TRAFFIC HEALTH
+     - Is organic search growing, flat, or declining compared to previous period?
+     - What percentage of total traffic comes from organic search?
+     - Are there any concerning trends in the data?
+
+  2. ENGAGEMENT QUALITY
+     - Which landing pages have the best engagement rates?
+     - Which pages have high traffic but poor engagement (potential content-intent mismatch)?
+     - What does the bounce rate suggest about content quality?
+
+  3. OPPORTUNITIES
+     - Which pages should be prioritized for SEO improvement?
+     - Are there pages with good engagement but low traffic (ranking opportunity)?
+     - What traffic channels are underperforming?
+
+  4. ACTION PLAN
+     - Top 3 immediate fixes based on the data
+     - Top 3 medium-term optimizations (next 30 days)
+     - Metrics to track for measuring improvement
+
+  Prioritize recommendations by expected impact on organic traffic.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Open GA4 and navigate to Reports > Acquisition > Traffic Acquisition for channel data"
+  - "Go to Reports > Engagement > Landing Page for page-level data"
+  - "Copy the relevant numbers into the placeholder fields"
+  - "Paste into ChatGPT, Claude, or any AI tool for analysis"
+
+placeholders:
+  - name: "[your website URL]"
+    description: "Your website's URL"
+  - name: "[e.g., last 30 days, last quarter]"
+    description: "The time period for the data you are analyzing"
+  - name: "[your industry]"
+    description: "Your industry or niche for context"
+  - name: "[number]"
+    description: "Numeric values from your GA4 reports"
+  - name: "[percentage]"
+    description: "Percentage values from your GA4 reports"
+  - name: "[list your top 5-10 landing pages with their sessions and engagement rates]"
+    description: "Top landing pages with their key metrics"
+  - name: "[organic, direct, referral, social percentages]"
+    description: "Traffic channel breakdown percentages"
+
+expected_output: "Traffic health assessment, engagement quality breakdown, prioritized SEO opportunities, and a 30-day action plan."
+
+tips:
+  - "Include data from two time periods for trend analysis"
+  - "Add GSC data alongside GA4 for a more complete picture"
+  - "Mention your business goals for prioritized recommendations"
+  - "Run this analysis monthly to track progress"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "content-gap-analysis"
+    - "comprehensive-site-audit"

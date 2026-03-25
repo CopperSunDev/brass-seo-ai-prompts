@@ -1,0 +1,72 @@
+metadata:
+  id: "meta-description-writer"
+  title: "Meta Description Writer"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Generate 5 SEO-optimized meta descriptions for any page, within the 160-character limit, matched to search intent."
+
+prompt_text: |
+  Write SEO-optimized meta descriptions for the following page:
+
+  Page URL or Title: [paste URL or page title]
+  Page Content Summary: [paste first 2-3 paragraphs or describe what the page is about]
+  Target Keyword: [primary keyword you want to rank for]
+  Page Type: [service page / blog post / product page / landing page / about page]
+  Business Name: [your business name]
+  Location (if local): [city/region, or skip if not local]
+
+  Generate 5 meta description options that:
+  - Stay between 150-160 characters (count each one)
+  - Include the target keyword naturally in the first half
+  - Match the search intent (what would someone searching this keyword want to see?)
+  - End with a reason to click (benefit, credential, CTA, or curiosity hook)
+  - Sound like a human wrote them, not a robot
+
+  For each option, provide:
+  1. The meta description text
+  2. Exact character count
+  3. What makes it effective (1 sentence)
+
+  Then recommend which option works best for this specific page and why.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Copy the page URL or title you need a meta description for"
+  - "Paste the first few paragraphs of the page content or summarize what it covers"
+  - "Add your target keyword from Google Search Console"
+  - "Run in ChatGPT, Claude, or any AI tool"
+  - "Pick the best option and add it to your page"
+
+placeholders:
+  - name: "[paste URL or page title]"
+    description: "The URL or title of the page you need a meta description for"
+  - name: "[paste first 2-3 paragraphs or describe what the page is about]"
+    description: "Page content or summary so the AI understands what to describe"
+  - name: "[primary keyword you want to rank for]"
+    description: "The main keyword this page should rank for"
+  - name: "[service page / blog post / product page / landing page / about page]"
+    description: "The type of page"
+  - name: "[your business name]"
+    description: "Your business or brand name"
+  - name: "[city/region, or skip if not local]"
+    description: "Location for local businesses"
+
+expected_output: "5 meta description options with character counts, effectiveness notes, and a recommendation for the best option."
+
+tips:
+  - "Include your location for local service pages"
+  - "Fix pages with high impressions but 0 clicks first"
+  - "Test output in a SERP preview tool"
+  - "Re-run after major page updates"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "title-meta-description-generator"
+    - "keyword-opportunity-finder"

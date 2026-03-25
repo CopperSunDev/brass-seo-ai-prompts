@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **10 Professional AI Prompts for SEO Tasks**
+🎯 **20 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -13,20 +13,22 @@ Ready-to-use prompts for technical SEO audits, content optimization, and more. C
 
 ## 📋 Prompt Categories
 
-### 🔧 Technical SEO (2 prompts)
+### 🔧 Technical SEO (3 prompts)
 
 Audit site performance, crawlability, and technical issues.
 
 - **[Comprehensive Site Audit](./prompts/markdown/technical-seo/comprehensive-site-audit.md)** - Full technical SEO analysis covering crawlability, indexation, speed, mobile, security, and structured data
 - **[Core Web Vitals Analysis](./prompts/markdown/technical-seo/core-web-vitals-analysis.md)** - Deep-dive into LCP, INP, and CLS with specific optimization recommendations
+- **[DIY SEO Audit Checklist](./prompts/markdown/technical-seo/diy-seo-audit-checklist.md)** - Step-by-step manual SEO audit checklist without paid tools
 
 [📖 View Details](https://brass-seo.com/blog/technical-seo-ai-prompts) | [📁 Browse Files](./prompts/markdown/technical-seo/)
 
-### 📝 Content Optimization (3 prompts)
+### 📝 Content Optimization (4 prompts)
 
 Improve on-page SEO and content quality.
 
 - **[Title & Meta Description Generator](./prompts/markdown/content-optimization/title-meta-description-generator.md)** - Create SEO-optimized titles and descriptions with multiple variations and character counts
+- **[Meta Description Writer](./prompts/markdown/content-optimization/meta-description-writer.md)** - Generate 5 meta description options within the 160-character limit for any page
 - **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities by analyzing competitor coverage
 - **[Keyword Opportunity Finder](./prompts/markdown/content-optimization/keyword-opportunity-finder.md)** - Find quick wins and strategic keyword targets from your GSC data
 
@@ -41,11 +43,13 @@ Evaluate and optimize AI model usage for production applications.
 
 [📖 View Details](https://brass-seo.com/blog/ai-model-evaluation-production-apps) | [📁 Browse Files](./prompts/markdown/ai-tools/)
 
-### 📊 SEO Analysis (1 prompt)
+### 📊 SEO Analysis (3 prompts)
 
 Analyze your traffic data and turn numbers into actionable insights.
 
 - **[GA4 Traffic Analysis](./prompts/markdown/seo-analysis/ga4-traffic-analysis.md)** - Analyze GA4 data for traffic health, engagement quality, and opportunities
+- **[SEO Report Action Plan](./prompts/markdown/seo-analysis/seo-report-action-plan.md)** - Turn any SEO report into a prioritized action plan with timelines
+- **[SEO Question Generator](./prompts/markdown/seo-analysis/seo-question-generator.md)** - Generate tailored SEO questions for your specific business and goals
 
 [📖 View Details](https://brass-seo.com/blog/how-to-read-your-ga4-traffic-report) | [📁 Browse Files](./prompts/markdown/seo-analysis/)
 

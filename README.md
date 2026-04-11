@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **20 Professional AI Prompts for SEO Tasks**
+🎯 **38 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -13,17 +13,29 @@ Ready-to-use prompts for technical SEO audits, content optimization, and more. C
 
 ## 📋 Prompt Categories
 
-### 🔧 Technical SEO (3 prompts)
+### 🔧 Technical SEO (15 prompts)
 
 Audit site performance, crawlability, and technical issues.
 
 - **[Comprehensive Site Audit](./prompts/markdown/technical-seo/comprehensive-site-audit.md)** - Full technical SEO analysis covering crawlability, indexation, speed, mobile, security, and structured data
 - **[Core Web Vitals Analysis](./prompts/markdown/technical-seo/core-web-vitals-analysis.md)** - Deep-dive into LCP, INP, and CLS with specific optimization recommendations
 - **[DIY SEO Audit Checklist](./prompts/markdown/technical-seo/diy-seo-audit-checklist.md)** - Step-by-step manual SEO audit checklist without paid tools
+- **[Claude: Crawlability Audit](./prompts/markdown/technical-seo/claude-crawlability-audit.md)** - Audit robots.txt and sitemap conflicts using Claude's full context window
+- **[Claude: Core Web Vitals Analysis](./prompts/markdown/technical-seo/claude-core-web-vitals-analysis.md)** - Paste PageSpeed data for specific fix recommendations
+- **[Claude: Indexing Issue Diagnosis](./prompts/markdown/technical-seo/claude-indexing-issue-diagnosis.md)** - Diagnose why a specific page isn't indexed
+- **[Claude: Robots.txt Audit](./prompts/markdown/technical-seo/claude-robots-txt-audit.md)** - Full robots.txt review with corrected version
+- **[Claude: XML Sitemap Review](./prompts/markdown/technical-seo/claude-xml-sitemap-review.md)** - Sitemap errors, missing pages, and structural issues
+- **[Claude: Duplicate Content Check](./prompts/markdown/technical-seo/claude-duplicate-content-check.md)** - Compare pages for canonicalization issues
+- **[Claude: Internal Link Audit](./prompts/markdown/technical-seo/claude-internal-link-audit.md)** - Identify orphan pages and linking gaps
+- **[Claude: Page Speed Analysis](./prompts/markdown/technical-seo/claude-page-speed-analysis.md)** - Find specific bottlenecks from HTML and network data
+- **[Claude: Schema Markup Audit](./prompts/markdown/technical-seo/claude-schema-markup-audit.md)** - Validate and extend schema markup with full page HTML
+- **[Claude: Mobile SEO Check](./prompts/markdown/technical-seo/claude-mobile-seo-check.md)** - Mobile-first indexing readiness audit
+- **[Claude: Hreflang & Canonicals Review](./prompts/markdown/technical-seo/claude-hreflang-canonicals-review.md)** - Validate international targeting implementation
+- **[Claude: Log File Analysis](./prompts/markdown/technical-seo/claude-log-file-analysis.md)** - Paste full server logs for Googlebot crawl pattern analysis
 
-[📖 View Details](https://brass-seo.com/blog/technical-seo-ai-prompts) | [📁 Browse Files](./prompts/markdown/technical-seo/)
+[📖 View Details](https://brass-seo.com/blog/technical-seo-ai-prompts) | [📖 Claude Prompts](https://brass-seo.com/blog/claude-prompts-technical-seo) | [📁 Browse Files](./prompts/markdown/technical-seo/)
 
-### 📝 Content Optimization (4 prompts)
+### 📝 Content Optimization (7 prompts)
 
 Improve on-page SEO and content quality.
 
@@ -31,6 +43,9 @@ Improve on-page SEO and content quality.
 - **[Meta Description Writer](./prompts/markdown/content-optimization/meta-description-writer.md)** - Generate 5 meta description options within the 160-character limit for any page
 - **[Content Gap Analysis](./prompts/markdown/content-optimization/content-gap-analysis.md)** - Identify missing content opportunities by analyzing competitor coverage
 - **[Keyword Opportunity Finder](./prompts/markdown/content-optimization/keyword-opportunity-finder.md)** - Find quick wins and strategic keyword targets from your GSC data
+- **[Title Tag Writer](./prompts/markdown/content-optimization/title-tag-writer.md)** - Generate title tags from actual GSC query data with CTR impact estimates
+- **[Content Gap Finder](./prompts/markdown/content-optimization/content-gap-finder.md)** - Find keywords you rank for but have no dedicated page about
+- **[Keyword to Content Plan](./prompts/markdown/content-optimization/keyword-to-content-plan.md)** - Turn a raw keyword list into a prioritized content plan with briefs
 
 [📖 View Details](https://brass-seo.com/blog/content-optimization-ai-prompts) | [📁 Browse Files](./prompts/markdown/content-optimization/)
 
@@ -43,22 +58,25 @@ Evaluate and optimize AI model usage for production applications.
 
 [📖 View Details](https://brass-seo.com/blog/ai-model-evaluation-production-apps) | [📁 Browse Files](./prompts/markdown/ai-tools/)
 
-### 📊 SEO Analysis (3 prompts)
+### 📊 SEO Analysis (5 prompts)
 
 Analyze your traffic data and turn numbers into actionable insights.
 
 - **[GA4 Traffic Analysis](./prompts/markdown/seo-analysis/ga4-traffic-analysis.md)** - Analyze GA4 data for traffic health, engagement quality, and opportunities
 - **[SEO Report Action Plan](./prompts/markdown/seo-analysis/seo-report-action-plan.md)** - Turn any SEO report into a prioritized action plan with timelines
 - **[SEO Question Generator](./prompts/markdown/seo-analysis/seo-question-generator.md)** - Generate tailored SEO questions for your specific business and goals
+- **[SEO Health Check](./prompts/markdown/seo-analysis/seo-health-check.md)** - Check four signals to determine if your SEO is improving, stable, or declining
+- **[Declining Pages Analyzer](./prompts/markdown/seo-analysis/declining-pages-analyzer.md)** - Find pages losing rankings with severity ratings and suggested fixes
 
 [📖 View Details](https://brass-seo.com/blog/how-to-read-your-ga4-traffic-report) | [📁 Browse Files](./prompts/markdown/seo-analysis/)
 
-### 🛡️ Troubleshooting (2 prompts)
+### 🛡️ Troubleshooting (3 prompts)
 
 Solve common setup and configuration issues.
 
 - **[Firewall Bot Allowlisting](./prompts/markdown/troubleshooting/firewall-bot-allowlisting.md)** - Get step-by-step instructions to allow an SEO bot through your firewall or WAF
 - **[Indexing Issue Diagnosis](./prompts/markdown/troubleshooting/indexing-issue-diagnosis.md)** - Diagnose and fix pages not appearing in Google search results
+- **[Indexing Status Checker](./prompts/markdown/troubleshooting/indexing-status-checker.md)** - Diagnose indexing problems with structured crawl and content analysis
 
 [📖 View Details](https://brass-seo.com/allow-bot) | [📁 Browse Files](./prompts/markdown/troubleshooting/)
 

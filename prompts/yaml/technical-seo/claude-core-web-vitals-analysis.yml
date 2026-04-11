@@ -1,0 +1,12 @@
+metadata:
+  id: "claude-core-web-vitals-analysis"
+  category: "technical-seo"
+  version: "1.0"
+  created: "2026-04-10"
+
+description: "Claude-specific technical SEO audit prompt. See full prompt at brass-seo.com/blog/claude-prompts-technical-seo"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  blog_post: "https://brass-seo.com/blog/claude-prompts-technical-seo"

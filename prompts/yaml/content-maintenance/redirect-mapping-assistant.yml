@@ -1,0 +1,54 @@
+metadata:
+  id: "redirect-mapping-assistant"
+  title: "Redirect Mapping Assistant"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Maps a page being merged or pruned to the correct consolidation target so SEO equity isn't lost in the process."
+
+prompt_text: |
+  Map a page being merged or pruned to the correct consolidation target so I don't lose SEO equity:
+
+  Page Being Removed: [URL]
+  Reason For Removal: [merge / prune / outdated and no longer relevant]
+  Candidate Target Pages: [list 2-4 URLs that might be a good redirect destination]
+  Content Overlap: [briefly describe what the removed page covered vs. what each candidate covers]
+
+  For each candidate target, score it on:
+  1. TOPICAL MATCH
+  2. TRAFFIC HEALTH — is the target page itself healthy, or would redirecting into it drag it down
+  3. USER EXPERIENCE — would a visitor still get an answer to their original question
+
+  Recommend the single best redirect target, or say clearly if none of the candidates are close enough.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Confirm the removal decision first"
+  - "List 2-4 candidate pages that might serve as the redirect target"
+  - "Describe the content overlap between the removed page and each candidate"
+
+placeholders:
+  - name: "[URL]"
+    description: "The page being removed"
+  - name: "[merge / prune / outdated and no longer relevant]"
+    description: "Reason for removal"
+  - name: "[list 2-4 URLs that might be a good redirect destination]"
+    description: "Candidate redirect targets"
+  - name: "[briefly describe what the removed page covered vs. what each candidate covers]"
+    description: "Content overlap description"
+
+expected_output: "Each candidate scored on topical match, traffic health, and user experience, with a single recommended redirect target or an honest 'no good match' verdict."
+
+tips:
+  - "A forced redirect to a poorly matched page can hurt the target more than losing the source helps"
+  - "Test the final redirect chain - chained redirects lose equity"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "content-pruning-candidate-finder"

@@ -1,0 +1,55 @@
+metadata:
+  id: "squarespace-seo-workaround-finder"
+  title: "Squarespace SEO Workaround Finder"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Finds workarounds for Squarespace's SEO limitations, distinguishing genuine platform limits from fixable settings."
+
+prompt_text: |
+  Find workarounds for Squarespace's SEO limitations on this specific site:
+
+  Site: [site URL]
+  Template: [template name, if known]
+  Known Pain Point: [describe the specific limitation you're hitting, if any]
+
+  Check for these common Squarespace constraints and whether a workaround exists:
+  1. URL SLUG CONTROL
+  2. SCHEMA MARKUP — what's missing that code injection could add
+  3. SITE SPEED — third-party fonts/scripts removable via Code Injection
+  4. BLOG CATEGORY/TAG SEO — indexable and thin-content risk
+  5. 301 REDIRECTS — URL Mappings tool usage
+
+  For each constraint, state whether it's a genuine platform limit or fixable through Squarespace's own tools.
+
+  Finish with the workarounds worth doing versus the ones not worth fighting the platform for.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your template and describe any specific limitation you're already running into"
+  - "Paste in your site URL"
+  - "Ask follow-up questions about any single constraint the audit flags"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The Squarespace site being audited"
+  - name: "[template name, if known]"
+    description: "The active Squarespace template"
+  - name: "[describe the specific limitation you're hitting, if any]"
+    description: "A known pain point, if one exists"
+
+expected_output: "Each of 5 common Squarespace constraints marked genuine-limit or fixable, with the specific tool to use, ending in a worth-it vs. not-worth-it list."
+
+tips:
+  - "Code Injection is Squarespace's escape hatch for most missing SEO features"
+  - "URL Mappings must be set up manually whenever a page's URL changes"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "webflow-seo-launch-checklist"

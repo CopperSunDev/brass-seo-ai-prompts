@@ -1,0 +1,55 @@
+metadata:
+  id: "keyword-intent-tier-classifier"
+  title: "Keyword Intent Tier Classifier"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Buckets a keyword list into informational, commercial, and transactional tiers so content effort goes where the buyer is."
+
+prompt_text: |
+  Classify the following keyword list into intent tiers so I know where to spend content effort:
+
+  Keywords: [paste list, one per line]
+  Site/Industry Context: [what the site sells or does]
+
+  Sort each keyword into one of three tiers:
+
+  1. INFORMATIONAL — the searcher wants to learn, not buy (e.g., "what is X")
+  2. COMMERCIAL INVESTIGATION — the searcher is comparing options before deciding (e.g., "best X for Y", "X vs Y")
+  3. TRANSACTIONAL — the searcher is ready to act (e.g., "buy X", "X pricing", "X near me")
+
+  For each keyword, report:
+  - Tier assignment
+  - The specific words/patterns that signal that tier
+  - Whether existing content on the site likely already serves this intent, or if it's a gap
+  - Suggested content format for the tier (guide, comparison, landing page)
+
+  Finish with a ranked list: which 5 keywords are worth a dedicated commercial or transactional page first, based on estimated buyer proximity.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Pull a keyword list from GSC queries, a keyword tool, or your own brainstorm"
+  - "Add brief context about what the site sells"
+  - "Paste in"
+
+placeholders:
+  - name: "[paste list, one per line]"
+    description: "The keyword list to classify"
+  - name: "[what the site sells or does]"
+    description: "Brief context on the site's product or service"
+
+expected_output: "Each keyword tagged Informational / Commercial Investigation / Transactional with reasoning, a gap flag, a suggested content format, and a ranked top-5 priority list."
+
+tips:
+  - "Informational content earns traffic; transactional content earns revenue"
+  - "Watch for keywords that look informational but carry commercial intent underneath"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "commercial-keyword-gap-finder"

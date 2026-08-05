@@ -1,0 +1,56 @@
+metadata:
+  id: "shopify-seo-settings-checklist"
+  title: "Shopify SEO Settings Checklist"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits a Shopify store against the platform-specific settings that actually move rankings, beyond generic SEO advice."
+
+prompt_text: |
+  Audit this Shopify store against the settings that actually move rankings, beyond generic SEO advice:
+
+  Store: [store URL]
+  Theme: [theme name]
+  Current Setup: [describe what's configured, or say "default theme settings"]
+
+  Check these Shopify-specific settings:
+  1. URL STRUCTURE
+  2. DUPLICATE CONTENT — the classic Shopify collection/product duplicate-URL issue
+  3. TITLE TAGS & META DESCRIPTIONS — set per-product/collection or left on defaults
+  4. IMAGE FILENAMES & ALT TEXT
+  5. APP BLOAT — apps likely adding unnecessary JavaScript/CSS
+  6. BLOG/XML SITEMAP — generated, submitted, and not orphaned from navigation
+
+  For each item, report pass/fail and the exact admin panel location to fix it.
+
+  Finish with the 3 highest-impact fixes for a store this size.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your theme and current SEO setup"
+  - "Paste in your store URL"
+  - "Ask specifically about installed apps if app bloat is a concern"
+
+placeholders:
+  - name: "[store URL]"
+    description: "The Shopify store being audited"
+  - name: "[theme name]"
+    description: "The active Shopify theme"
+  - name: "[describe what's configured, or say \"default theme settings\"]"
+    description: "Current SEO setup"
+
+expected_output: "Pass/fail on each of 6 Shopify-specific SEO checks with the exact admin panel location to fix it, ending in the top 3 highest-impact fixes."
+
+tips:
+  - "The collection/product duplicate-URL issue is one of the most common Shopify-specific problems"
+  - "Product images uploaded in bulk often skip alt text entirely"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "wordpress-seo-audit-no-plugin"

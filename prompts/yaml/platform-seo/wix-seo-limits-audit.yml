@@ -1,0 +1,55 @@
+metadata:
+  id: "wix-seo-limits-audit"
+  title: "Wix SEO Limits Audit"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits a Wix site for the platform limits that most affect SEO, separating fixable settings from genuine ceilings."
+
+prompt_text: |
+  Audit this Wix site for the platform limits that most affect SEO, and what Wix's own tools can and can't fix:
+
+  Site: [site URL]
+  Wix Plan: [plan tier, if known]
+  Current SEO Setup: [describe what's configured, e.g. Wix SEO Wiz, manual settings]
+
+  Check these Wix-specific constraints:
+  1. URL STRUCTURE — historical URL pattern issues, clean URLs enabled
+  2. SEO SETTINGS PANEL — title tags, meta descriptions, structured data set per page
+  3. SITE SPEED — render-heavy elements like video backgrounds
+  4. MOBILE VERSION DRIFT — separate mobile-optimized view differing from desktop
+  5. THIRD-PARTY APP BLOAT
+
+  For each item, report pass/fail and whether it's fixable in Wix's own tools or a genuine platform ceiling.
+
+  Finish with what's worth fixing now versus what to accept as a trade-off.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your Wix plan tier and current SEO setup"
+  - "Paste in your site URL"
+  - "Check the separate mobile editor view if mobile traffic underperforms desktop"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The Wix site being audited"
+  - name: "[plan tier, if known]"
+    description: "The Wix plan in use"
+  - name: "[describe what's configured, e.g. Wix SEO Wiz, manual settings]"
+    description: "Current SEO setup"
+
+expected_output: "Pass/fail on 5 Wix-specific constraints, each marked fixable or platform ceiling, ending in a worth-fixing vs. accept-as-trade-off list."
+
+tips:
+  - "Wix's mobile editor is a genuinely separate view - content or settings can silently drift"
+  - "Wix SEO Wiz covers the basics but doesn't catch everything on this list"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "ghost-seo-built-in-vs-missing-checklist"

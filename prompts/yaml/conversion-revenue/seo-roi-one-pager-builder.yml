@@ -1,0 +1,58 @@
+metadata:
+  id: "seo-roi-one-pager-builder"
+  title: "SEO ROI One-Pager Builder"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Builds the one-page cost-in, revenue-out case for a budget review, using real GSC and GA4 numbers instead of vibes."
+
+prompt_text: |
+  Build a one-page case for SEO ROI I can bring to a skeptical boss (or convince myself):
+
+  Site: [site URL]
+  Monthly SEO Cost: [tool cost, agency cost, or time cost — be specific]
+  Time Period: [e.g., last 6 months]
+  GSC Data: [organic clicks/impressions trend]
+  GA4 Data: [organic conversions and, if known, revenue per conversion or average deal size]
+
+  Build a one-pager with:
+
+  1. COST IN — total spend over the period, broken down by category
+  2. TRAFFIC OUT — organic click trend, plainest possible read
+  3. REVENUE OUT — organic conversions times value per conversion, or a hedged estimate
+  4. THE TREND LINE — is the cost-to-revenue ratio improving, over the typical 6-9 month SEO lag
+  5. WHAT TO IGNORE — vanity metrics that don't belong in this case
+
+  Keep the total output to one page. End with a single sentence a non-marketer could repeat back accurately.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Total your actual monthly SEO cost across tools, agency fees, or estimated time"
+  - "Pull the GSC organic trend for your chosen time period"
+  - "Pull GA4 organic conversions and estimate revenue per conversion if needed"
+
+placeholders:
+  - name: "[tool cost, agency cost, or time cost — be specific]"
+    description: "Actual monthly SEO spend"
+  - name: "[e.g., last 6 months]"
+    description: "The time period the case covers"
+  - name: "[organic clicks/impressions trend]"
+    description: "GSC trend export"
+  - name: "[organic conversions and, if known, revenue per conversion or average deal size]"
+    description: "GA4 conversion and revenue data"
+
+expected_output: "A one-page ROI case: cost in, traffic out, revenue out, trend read, and what to ignore, ending in one plain-English summary sentence."
+
+tips:
+  - "If revenue per conversion isn't tracked exactly, use a hedged range rather than inventing a number"
+  - "Judge SEO on a 6-9 month window, not a monthly snapshot"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "money-pages-vs-traffic-magnets-finder"

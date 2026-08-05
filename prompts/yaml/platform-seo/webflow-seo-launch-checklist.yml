@@ -1,0 +1,55 @@
+metadata:
+  id: "webflow-seo-launch-checklist"
+  title: "Webflow SEO Launch Checklist"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits a Webflow site's SEO setup from launch through its first real traffic, covering both static pages and CMS collections."
+
+prompt_text: |
+  Audit this Webflow site's SEO setup from launch through its first real traffic:
+
+  Site: [site URL]
+  Launch Status: [pre-launch / just launched / launched N months ago]
+  CMS Collections In Use: [list any CMS collections, e.g. blog, products]
+
+  Check these Webflow-specific items:
+  1. SEO SETTINGS PANEL — title tags, meta descriptions, OG images set per-page and per-CMS-item
+  2. 301 REDIRECTS — native redirect manager entries for any URLs changed since launch
+  3. SITEMAP & INDEXING — auto-generated sitemap submitted to GSC, CMS pages included
+  4. CANONICAL TAGS — duplicate content across CMS filtering/pagination
+  5. PERFORMANCE — heavy interactions/animations hurting Core Web Vitals on mobile
+
+  For each item, report pass/fail and the specific Webflow panel to fix it in.
+
+  Finish with the single most important thing to fix before or right after launch.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your launch status and which CMS collections are in use"
+  - "Paste in your site URL"
+  - "Re-run after any major CMS content addition"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The Webflow site being audited"
+  - name: "[pre-launch / just launched / launched N months ago]"
+    description: "Launch status"
+  - name: "[list any CMS collections, e.g. blog, products]"
+    description: "CMS collections in use"
+
+expected_output: "Pass/fail on 5 Webflow-specific SEO checks with the specific panel to fix each in, ending in one launch-priority fix."
+
+tips:
+  - "CMS collection SEO settings are set per-item, not globally"
+  - "Heavy Webflow interactions are a common mobile Core Web Vitals drag"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "squarespace-seo-workaround-finder"

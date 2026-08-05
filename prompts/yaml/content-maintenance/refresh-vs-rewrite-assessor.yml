@@ -1,0 +1,55 @@
+metadata:
+  id: "refresh-vs-rewrite-assessor"
+  title: "Refresh vs. Rewrite Assessor"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Decides whether a page needs a light data refresh or a full rewrite, based on structural soundness and factual drift."
+
+prompt_text: |
+  Decide whether this page needs a light data refresh or a full rewrite:
+
+  Page URL: [URL]
+  Page Content: [paste the current content, or a summary of it]
+  Current Performance: [GSC clicks/impressions trend]
+  What's Changed Since Publish: [any known product, pricing, or industry changes relevant to this topic]
+
+  Assess against these criteria:
+  1. STRUCTURAL SOUNDNESS
+  2. FACTUAL DRIFT — how much of the content is now inaccurate
+  3. COMPETITIVE GAP — does the page still cover the topic as thoroughly as what currently ranks above it
+  4. TRAFFIC SIGNAL
+
+  Give a single verdict: QUICK REFRESH or FULL REWRITE, with the specific reasoning.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Paste the page's current content or a close summary"
+  - "Pull its GSC performance trend"
+  - "Note anything specific that's changed since publish"
+
+placeholders:
+  - name: "[URL]"
+    description: "The page being assessed"
+  - name: "[paste the current content, or a summary of it]"
+    description: "Current page content"
+  - name: "[GSC clicks/impressions trend]"
+    description: "Performance trend data"
+  - name: "[any known product, pricing, or industry changes relevant to this topic]"
+    description: "What's changed since the page was published"
+
+expected_output: "A single verdict - quick refresh or full rewrite - with reasoning across structural soundness, factual drift, competitive gap, and traffic signal."
+
+tips:
+  - "A page with a sound structure rarely needs a full rewrite even if every stat is stale"
+  - "Check what currently outranks the page before deciding"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "six-month-re-optimization-calendar-builder"

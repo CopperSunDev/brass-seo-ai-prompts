@@ -1,0 +1,57 @@
+metadata:
+  id: "ga4-conversion-event-setup-checklist"
+  title: "GA4 Conversion Event Setup Checklist"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "A step-by-step key-event setup for a non-technical owner, so SEO conversions get tracked correctly in GA4."
+
+prompt_text: |
+  Walk me through setting up SEO conversion tracking in GA4 for a non-technical site owner:
+
+  Site: [site URL, platform e.g. WordPress/Shopify/custom]
+  What Counts As A Conversion: [e.g., trial signup, contact form submit, purchase]
+  Current GA4 Setup: [describe what's configured today, or say "nothing configured yet"]
+  Analytics Access Level: [admin / editor / view only]
+
+  Produce a step-by-step checklist covering:
+
+  1. KEY EVENT SETUP — which GA4 event to mark as a key event, and how to create it if it doesn't exist
+  2. ORGANIC SEGMENT — how to filter the key event report to Organic Search traffic only
+  3. LANDING PAGE ATTRIBUTION — how to see which landing page drove each conversion
+  4. VERIFICATION — how to confirm the event is actually firing
+  5. COMMON MISCONFIGURATIONS — the 3 most common reasons a key event silently stops firing or double-counts
+
+  Format the output as a numbered checklist I can follow in GA4's interface without needing a developer.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your site's platform and what a conversion means for your business"
+  - "Describe your current GA4 setup honestly, even if nothing is configured yet"
+  - "Confirm your access level so steps match what you can click"
+
+placeholders:
+  - name: "[site URL, platform e.g. WordPress/Shopify/custom]"
+    description: "The site and the platform it runs on"
+  - name: "[e.g., trial signup, contact form submit, purchase]"
+    description: "What action counts as a conversion for this business"
+  - name: "[describe what's configured today, or say \"nothing configured yet\"]"
+    description: "Current GA4 configuration state"
+  - name: "[admin / editor / view only]"
+    description: "The user's GA4 access level"
+
+expected_output: "A numbered, platform-appropriate checklist covering key-event setup, organic segmentation, landing-page attribution, verification, and common misconfigurations."
+
+tips:
+  - "Verify the event fires with a real test action before trusting any report built on it"
+  - "Both GSC and GA4 are required to see the full picture"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "ga4-attribution-sanity-check"

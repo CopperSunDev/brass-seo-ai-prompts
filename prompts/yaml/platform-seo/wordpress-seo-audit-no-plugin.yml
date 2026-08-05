@@ -1,0 +1,56 @@
+metadata:
+  id: "wordpress-seo-audit-no-plugin"
+  title: "WordPress SEO Audit (No Plugin)"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits a WordPress site's core SEO settings using only native WordPress and theme-level features, without assuming an SEO plugin."
+
+prompt_text: |
+  Audit this WordPress site's core SEO settings without relying on Yoast, Rank Math, or any other SEO plugin:
+
+  Site: [site URL]
+  Current Plugins Installed: [list any SEO-related plugins, or say "none"]
+  Theme: [theme name, if known]
+
+  Check these WordPress-native and theme-level settings:
+  1. PERMALINK STRUCTURE
+  2. TITLE TAGS & META DESCRIPTIONS — does the theme support editing these natively
+  3. XML SITEMAP — does WordPress's built-in sitemap cover all published content
+  4. IMAGE ALT TEXT
+  5. ROBOTS.TXT — is the default robots.txt blocking anything it shouldn't
+  6. CORE WEB VITALS RISK — flag heavy theme features likely hurting page speed
+
+  For each check, report pass/fail/unclear and the specific setting or file to change if it fails.
+
+  Finish with which genuinely requires a plugin versus what's a native setting most guides skip.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "List any SEO-related plugins currently installed, or say none"
+  - "Note the active theme"
+  - "Paste in your site URL"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The WordPress site being audited"
+  - name: "[list any SEO-related plugins, or say \"none\"]"
+    description: "Currently installed SEO plugins"
+  - name: "[theme name, if known]"
+    description: "The active WordPress theme"
+
+expected_output: "Pass/fail/unclear on each of 6 native WordPress SEO checks, with the specific setting to fix and a note on which genuinely need a plugin."
+
+tips:
+  - "WordPress has shipped a native XML sitemap since version 5.5"
+  - "Permalink structure is a one-time setting most sites never revisit"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "shopify-seo-settings-checklist"

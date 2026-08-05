@@ -1,0 +1,60 @@
+metadata:
+  id: "traffic-to-sales-leak-diagnostic"
+  title: "Traffic-to-Sales Leak Diagnostic"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Walks the funnel from impression to conversion to find exactly where SEO traffic stops turning into sales."
+
+prompt_text: |
+  Diagnose where my SEO traffic is failing to turn into sales, walking the funnel from impression to conversion:
+
+  Site: [site URL]
+  Date Range: [last 90 days]
+  GSC Data: [impressions, clicks, CTR, average position for top queries/pages]
+  GA4 Data: [sessions, engagement/bounce rate, conversion rate by landing page]
+  Primary Conversion Event: [e.g., trial signup]
+  Known Baseline: [conversion rate you'd consider healthy, if known]
+
+  Walk through the funnel in order and flag where the leak most likely sits:
+
+  1. IMPRESSION-TO-CLICK LEAK — high impressions, low CTR (title/meta problem, or wrong-intent query)
+  2. CLICK-TO-ENGAGEMENT LEAK — healthy CTR, high bounce/exit rate (landing page mismatch)
+  3. ENGAGEMENT-TO-CONVERSION LEAK — people stay, but don't convert
+  4. TRACKING LEAK — check whether the conversion event is actually firing correctly before blaming the funnel
+
+  For each leak point found, cite the specific pages/queries showing the pattern and rank the leaks by estimated lost conversions.
+
+  Finish with the single highest-leverage fix to try first.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Pull the GSC Performance export for your top 20-30 queries/pages"
+  - "Pull the GA4 landing-page report with engagement rate and conversions"
+  - "Paste both into the prompt along with your target conversion rate if known"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The site being analyzed"
+  - name: "[impressions, clicks, CTR, average position for top queries/pages]"
+    description: "GSC Performance report export"
+  - name: "[sessions, engagement/bounce rate, conversion rate by landing page]"
+    description: "GA4 landing-page report export"
+  - name: "[e.g., trial signup]"
+    description: "The GA4 key event that counts as a conversion"
+
+expected_output: "A ranked list of funnel leak points (impression-to-click, click-to-engagement, engagement-to-conversion, or tracking), each with the specific pages/queries affected and a single highest-leverage fix."
+
+tips:
+  - "Rule out tracking issues first - a broken GA4 event wastes fix effort elsewhere"
+  - "Compare pages against each other, not one global average"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "money-pages-vs-traffic-magnets-finder"

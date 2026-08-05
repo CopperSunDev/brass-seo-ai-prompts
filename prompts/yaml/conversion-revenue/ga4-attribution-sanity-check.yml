@@ -1,0 +1,57 @@
+metadata:
+  id: "ga4-attribution-sanity-check"
+  title: "GA4 Attribution Sanity-Check"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Checks a GA4 setup for common attribution issues that can make SEO look worse than it actually is."
+
+prompt_text: |
+  Check my GA4 setup for attribution issues that could make SEO look worse than it is:
+
+  Site: [site URL]
+  GA4 Property Settings: [attribution model in use, if known — e.g., data-driven, last-click]
+  Conversion Path Example: [describe a typical customer journey]
+  Current Organic Numbers: [organic sessions and conversions from GA4]
+
+  Check for these common misattribution patterns:
+
+  1. SELF-REFERRAL — the site's own domain showing up as a traffic source
+  2. CROSS-DOMAIN TRACKING GAPS — if checkout happens on a different domain, is linking configured
+  3. LAST-CLICK BLIND SPOT — whether a data-driven or first-touch view would credit organic differently
+  4. CONSENT MODE GAPS — whether cookie consent settings are silently dropping sessions before attribution
+  5. DIRECT TRAFFIC INFLATION — untagged traffic incorrectly bucketed as Direct that's actually organic-influenced
+
+  For each pattern found, explain the fix and roughly how much it likely understates organic's real contribution.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Check GA4 Admin > Attribution settings for the model in use"
+  - "Describe one or two typical customer journeys in plain language"
+  - "Note current organic session and conversion counts"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The site being checked"
+  - name: "[attribution model in use, if known — e.g., data-driven, last-click]"
+    description: "Current GA4 attribution model"
+  - name: "[describe a typical customer journey, e.g., \"finds blog post, leaves, returns via branded search, converts\"]"
+    description: "A representative conversion path"
+  - name: "[organic sessions and conversions from GA4]"
+    description: "Current organic performance numbers"
+
+expected_output: "Each misattribution pattern checked, with a fix and an estimate of how much organic's real contribution is being understated."
+
+tips:
+  - "Self-referral and cross-domain gaps are the two most common causes of organic looking artificially weak"
+  - "Re-check after any domain, subdomain, or checkout-platform change"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "ga4-conversion-event-setup-checklist"

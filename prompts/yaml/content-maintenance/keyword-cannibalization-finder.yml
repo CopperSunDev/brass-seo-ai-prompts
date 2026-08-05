@@ -1,0 +1,48 @@
+metadata:
+  id: "keyword-cannibalization-finder"
+  title: "Keyword Cannibalization Finder"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Finds pages on a site competing against each other for the same search query and recommends merge, canonical, or differentiate."
+
+prompt_text: |
+  Find pages on my site competing against each other for the same search query:
+
+  Site: [site URL]
+  GSC Query Data: [paste query-level data showing which pages rank for which queries]
+
+  For each query where more than one page on the site receives impressions:
+  1. List the competing pages and their individual position/clicks/impressions for that query
+  2. Determine whether this is TRUE cannibalization or ACCEPTABLE overlap
+  3. For true cannibalization, recommend the fix: merge, canonical tag, or differentiate
+
+  Rank the cannibalization cases by combined lost traffic potential.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export GSC query data with the pages ranking for each query"
+  - "Paste in"
+  - "Review each flagged case before acting"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The site being analyzed"
+  - name: "[paste query-level data showing which pages rank for which queries]"
+    description: "GSC query + page export"
+
+expected_output: "Each multi-page query flagged true cannibalization or acceptable overlap, with a recommended fix, ranked by lost traffic potential."
+
+tips:
+  - "Two pages ranking for the same query isn't automatically a problem - check for different intent first"
+  - "Re-run after any site restructure"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "refresh-merge-prune-delete-verdict"

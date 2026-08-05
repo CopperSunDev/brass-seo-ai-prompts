@@ -1,0 +1,56 @@
+metadata:
+  id: "refresh-merge-prune-delete-verdict"
+  title: "Refresh / Merge / Prune / Delete Verdict"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Runs one page through a decision tree and returns a single verdict, not a menu of options."
+
+prompt_text: |
+  Run this one page through a decision tree and give me a single verdict — refresh, merge, prune, or delete:
+
+  Page URL: [URL]
+  Current Performance: [GSC clicks/impressions trend, GA4 engagement]
+  Page Age: [publish date or approximate age]
+  Content Topic: [what the page covers]
+  Similar Pages On Site: [any other URLs covering an overlapping topic, if known]
+
+  Walk the decision tree in this order:
+  1. Is another page on the site targeting the same primary query? If yes, lean MERGE.
+  2. Is the page still getting meaningful traffic but the information is outdated? If yes, lean REFRESH.
+  3. Is the page getting near-zero traffic and covering a topic with no ongoing relevance? If yes, lean DELETE (with redirect).
+  4. Is the page getting near-zero traffic but the topic still matters? If yes, lean PRUNE FROM NAV or REFRESH once.
+
+  Give ONE verdict, not a menu, with the specific reasoning that ruled out the other three.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Pull the page's GSC and GA4 performance"
+  - "Note the page's approximate publish date"
+  - "List any other pages on the site covering an overlapping topic"
+
+placeholders:
+  - name: "[URL]"
+    description: "The page being evaluated"
+  - name: "[GSC clicks/impressions trend, GA4 engagement]"
+    description: "Current performance data"
+  - name: "[publish date or approximate age]"
+    description: "How old the page is"
+  - name: "[any other URLs covering an overlapping topic, if known]"
+    description: "Potentially competing pages on the same site"
+
+expected_output: "A single verdict — refresh, merge, prune, or delete — with the reasoning that ruled out the other three options."
+
+tips:
+  - "A verdict that hedges between two options isn't a verdict"
+  - "Feed the output into the Redirect Mapping Assistant if the verdict is merge or delete"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "redirect-mapping-assistant"

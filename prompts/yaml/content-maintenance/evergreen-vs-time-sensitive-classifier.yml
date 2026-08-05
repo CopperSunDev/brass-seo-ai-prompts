@@ -1,0 +1,50 @@
+metadata:
+  id: "evergreen-vs-time-sensitive-classifier"
+  title: "Evergreen vs. Time-Sensitive Classifier"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Classifies published posts by how much upkeep each one actually needs, flagging which will age and when to recheck them."
+
+prompt_text: |
+  Classify my published posts by how much upkeep each one actually needs:
+
+  Posts: [list post titles/URLs, or paste a full post list]
+  Post Content Summary: [brief note on what each covers, if not obvious from title]
+
+  Classify each post into:
+  1. EVERGREEN — no dates, prices, or version-specific facts
+  2. TIME-SENSITIVE — contains specific stats, prices, product versions, or "as of [year]" framing
+  3. SEASONAL — tied to a recurring event or period needing scheduled refreshing
+
+  For TIME-SENSITIVE and SEASONAL posts, note the specific element that will go stale first and a suggested recheck interval.
+
+  Output as a simple table: post, classification, stale-first element, recheck interval.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "List your published posts, titles or URLs"
+  - "Add a brief content summary for any where the topic isn't obvious from the title alone"
+  - "Paste in"
+
+placeholders:
+  - name: "[list post titles/URLs, or paste a full post list]"
+    description: "The posts to classify"
+  - name: "[brief note on what each covers, if not obvious from title]"
+    description: "Content summaries where needed"
+
+expected_output: "A table classifying each post as evergreen, time-sensitive, or seasonal, with the stale-first element and recheck interval for the latter two."
+
+tips:
+  - "Most 'evergreen' posts actually contain a stealth time-sensitive fact"
+  - "Feed the recheck intervals into the 6-Month Re-Optimization Calendar Builder"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "six-month-re-optimization-calendar-builder"

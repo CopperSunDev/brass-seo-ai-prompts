@@ -1,0 +1,67 @@
+metadata:
+  id: "money-pages-vs-traffic-magnets-finder"
+  title: "Money Pages vs. Traffic Magnets Finder"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Cross-references GSC clicks against GA4 conversions to separate pages that rank from pages that actually make money."
+
+prompt_text: |
+  Analyze my Google Search Console and Google Analytics 4 data together to separate pages that rank from pages that actually make money:
+
+  Site: [site URL]
+  Date Range: [last 90 days / last 12 months]
+  GSC Data: [paste top pages by clicks/impressions export]
+  GA4 Data: [paste top pages by conversions/revenue export]
+  Primary Conversion Event: [e.g., trial signup, purchase, lead form]
+
+  For each page in the top 20 by GSC clicks, cross-reference against GA4 and classify into one of four buckets:
+
+  1. MONEY PAGES — high clicks AND high conversions/revenue relative to traffic
+  2. TRAFFIC MAGNETS — high clicks, but conversion rate below site average
+  3. HIDDEN EARNERS — moderate or low clicks, but conversion rate well above site average
+  4. DEAD WEIGHT — low clicks and low conversions
+
+  For each page, report:
+  - GSC clicks and average position
+  - GA4 conversions/revenue and conversion rate
+  - Bucket assignment and the reasoning
+  - One specific recommendation (promote, fix landing page, add internal links, leave alone)
+
+  Finish with:
+  - The 3 "Hidden Earners" most worth more traffic
+  - The 3 "Traffic Magnets" most worth a conversion-path fix
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export your top 20-50 pages by clicks from GSC (Performance report)"
+  - "Export the same pages' conversions/revenue from GA4"
+  - "Paste both exports in and name your primary conversion event"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The site being analyzed"
+  - name: "[last 90 days / last 12 months]"
+    description: "The date range both exports cover"
+  - name: "[paste top pages by clicks/impressions export]"
+    description: "GSC Performance report export"
+  - name: "[paste top pages by conversions/revenue export]"
+    description: "GA4 landing-page or conversions export"
+  - name: "[e.g., trial signup, purchase, lead form]"
+    description: "The GA4 key event that counts as a conversion"
+
+expected_output: "Each top page bucketed into Money Page / Traffic Magnet / Hidden Earner / Dead Weight with reasoning and a specific recommendation, plus a ranked priority list."
+
+tips:
+  - "A page can be a Traffic Magnet for good reason - some pages support the funnel instead of closing it"
+  - "Rerun quarterly since conversion rates drift as content ages"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "traffic-to-sales-leak-diagnostic"

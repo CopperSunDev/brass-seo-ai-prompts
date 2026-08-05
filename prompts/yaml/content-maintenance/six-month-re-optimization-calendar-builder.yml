@@ -1,0 +1,53 @@
+metadata:
+  id: "six-month-re-optimization-calendar-builder"
+  title: "6-Month Re-Optimization Calendar Builder"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Builds a recurring refresh calendar for a site's top pages so winners get revisited before they quietly decline."
+
+prompt_text: |
+  Build a recurring re-optimization calendar for my site's top pages so winners don't quietly decline:
+
+  Site: [site URL]
+  Top Pages: [list your top 10-20 pages by traffic or revenue]
+  Publish/Last-Updated Dates: [for each page, if known]
+  Team Capacity: [how many refreshes per month realistically]
+
+  Build a 6-month calendar that:
+  1. Schedules each top page for a check-in at least once every 6 months
+  2. Front-loads pages already showing early decay signals or furthest past their last update
+  3. Spaces refreshes evenly against stated team capacity
+  4. Distinguishes a QUICK CHECK (15 minutes) from a FULL REFRESH (1-2 hours)
+
+  Output as a month-by-month table: month, page, check type, and the one thing most likely to need updating.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "List your top 10-20 pages by traffic or revenue"
+  - "Note the last-updated date for each, if known"
+  - "State how many refreshes your team can realistically do per month"
+
+placeholders:
+  - name: "[list your top 10-20 pages by traffic or revenue]"
+    description: "The pages to schedule"
+  - name: "[for each page, if known]"
+    description: "Publish or last-updated dates"
+  - name: "[how many refreshes per month realistically]"
+    description: "Team capacity for refresh work"
+
+expected_output: "A month-by-month calendar table covering 6 months: page, check type (quick check or full refresh), and the likely thing needing an update."
+
+tips:
+  - "A calendar that's never followed is worthless - set capacity honestly"
+  - "Feed pages flagged by the Content Decay Detector to the front of the schedule"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "refresh-vs-rewrite-assessor"

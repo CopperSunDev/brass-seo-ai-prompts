@@ -1,0 +1,59 @@
+metadata:
+  id: "landing-page-conversion-audit"
+  title: "Landing Page Conversion Audit"
+  category: "conversion-revenue"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits one URL for conversion friction, assuming the traffic to it is already healthy."
+
+prompt_text: |
+  Audit this one landing page for conversion friction, assuming the traffic to it is already healthy:
+
+  Page URL: [URL]
+  Page Content: [paste the page's main copy, or describe it]
+  Primary Conversion Goal: [what action should the visitor take]
+  GA4 Data For This Page: [sessions, engagement rate, conversion rate]
+
+  Audit the page against these friction points:
+
+  1. CLARITY — can a first-time visitor tell what to do within 5 seconds
+  2. CTA — is there one clear call-to-action, or several competing ones
+  3. TRUST — is there anything missing a skeptical visitor would need before acting
+  4. FORM/PATH FRICTION — if there's a form or checkout step, what's asked that doesn't need to be
+  5. MOBILE — anything about the layout or copy that likely breaks on a phone
+
+  For each issue found, give the specific line or element and the fix, not just the category.
+
+  Finish with the single change most likely to move the conversion rate, and why that one first.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Confirm the page already gets healthy traffic before auditing"
+  - "Paste the page's actual copy or describe its layout and content"
+  - "State the one action you want the visitor to take"
+
+placeholders:
+  - name: "[URL]"
+    description: "The landing page being audited"
+  - name: "[paste the page's main copy, or describe it]"
+    description: "The page's content"
+  - name: "[what action should the visitor take]"
+    description: "The primary conversion goal"
+  - name: "[sessions, engagement rate, conversion rate]"
+    description: "GA4 data for this page"
+
+expected_output: "A friction audit across clarity, CTA, trust, form/path friction, and mobile, each with the specific issue and fix, ending in one highest-priority change."
+
+tips:
+  - "Run the Traffic-to-Sales Leak Diagnostic first if unsure the leak is on this page"
+  - "One clear CTA beats three good ones competing for attention"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "traffic-to-sales-leak-diagnostic"

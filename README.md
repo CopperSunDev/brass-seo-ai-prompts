@@ -1,6 +1,6 @@
 # Brass-SEO AI Prompts
 
-🎯 **38 Professional AI Prompts for SEO Tasks**
+🎯 **60 Professional AI Prompts for SEO Tasks**
 
 Ready-to-use prompts for technical SEO audits, content optimization, and more. Copy, paste, and customize for your SEO workflow.
 
@@ -79,6 +79,62 @@ Solve common setup and configuration issues.
 - **[Indexing Status Checker](./prompts/markdown/troubleshooting/indexing-status-checker.md)** - Diagnose indexing problems with structured crawl and content analysis
 
 [📖 View Details](https://brass-seo.com/allow-bot) | [📁 Browse Files](./prompts/markdown/troubleshooting/)
+
+### 📚 SEO Playbooks (6 prompts)
+
+Advanced tactics: PAA FAQ posts, Grokipedia backlinks, press release distribution.
+
+- **[PAA Keyword Candidates](./prompts/markdown/seo-playbooks/paa-keyword-candidates.md)** - Find keywords for People Also Ask FAQ posts using your GSC data
+- **[PAA FAQ Post Writer](./prompts/markdown/seo-playbooks/paa-faq-post-writer.md)** - Turn real Google PAA questions into a comprehensive FAQ post
+- **[Grokipedia Opportunity Finder](./prompts/markdown/seo-playbooks/grokipedia-opportunity-finder.md)** - Identify authoritative content for Grokipedia correction backlinks
+- **[Grokipedia Correction Writer](./prompts/markdown/seo-playbooks/grokipedia-correction-writer.md)** - Write submission-ready Grokipedia corrections
+- **[Press Release Angle Finder](./prompts/markdown/seo-playbooks/press-release-angle-finder.md)** - Identify newsworthy angles from your site data
+- **[Press Release Writer](./prompts/markdown/seo-playbooks/press-release-writer.md)** - Write a PRLog-ready press release with UTM tracking
+
+[📖 View Details](https://brass-seo.com/blog/seo-playbook-ai-prompts) | [📁 Browse Files](./prompts/markdown/seo-playbooks/)
+
+### 💰 Conversion & Revenue (8 prompts)
+
+Turn SEO traffic into revenue by cross-referencing GSC and GA4.
+
+- **[Money Pages vs. Traffic Magnets Finder](./prompts/markdown/conversion-revenue/money-pages-vs-traffic-magnets-finder.md)** - Separate pages that rank from pages that actually make money
+- **[Traffic-to-Sales Leak Diagnostic](./prompts/markdown/conversion-revenue/traffic-to-sales-leak-diagnostic.md)** - Walk the funnel to find exactly where SEO traffic stops converting
+- **[Keyword Intent Tier Classifier](./prompts/markdown/conversion-revenue/keyword-intent-tier-classifier.md)** - Sort keywords into informational, commercial, and transactional tiers
+- **[GA4 Conversion Event Setup Checklist](./prompts/markdown/conversion-revenue/ga4-conversion-event-setup-checklist.md)** - Set up SEO conversion tracking without a developer
+- **[SEO ROI One-Pager Builder](./prompts/markdown/conversion-revenue/seo-roi-one-pager-builder.md)** - Build the cost-in, revenue-out case for a budget review
+- **[Landing Page Conversion Audit](./prompts/markdown/conversion-revenue/landing-page-conversion-audit.md)** - Audit one URL for conversion friction
+- **[GA4 Attribution Sanity-Check](./prompts/markdown/conversion-revenue/ga4-attribution-sanity-check.md)** - Catch attribution issues making organic look weaker than it is
+- **[Commercial Keyword Gap Finder](./prompts/markdown/conversion-revenue/commercial-keyword-gap-finder.md)** - Find high-intent keywords with no dedicated page
+
+[📖 View Details](https://brass-seo.com/blog/seo-to-revenue-ai-prompts) | [📁 Browse Files](./prompts/markdown/conversion-revenue/)
+
+### 🔄 Content Maintenance (8 prompts)
+
+Catch content decay and decide what to refresh, merge, prune, or delete.
+
+- **[Content Decay Detector](./prompts/markdown/content-maintenance/content-decay-detector.md)** - Flag pages in slow, silent decline before it's visible in a snapshot
+- **[Refresh / Merge / Prune / Delete Verdict](./prompts/markdown/content-maintenance/refresh-merge-prune-delete-verdict.md)** - Get one clear verdict per page, not a menu of options
+- **[6-Month Re-Optimization Calendar Builder](./prompts/markdown/content-maintenance/six-month-re-optimization-calendar-builder.md)** - Schedule recurring refreshes for top pages
+- **[Content Pruning Candidate Finder](./prompts/markdown/content-maintenance/content-pruning-candidate-finder.md)** - Find pages worth pruning without losing SEO equity
+- **[Keyword Cannibalization Finder](./prompts/markdown/content-maintenance/keyword-cannibalization-finder.md)** - Find pages competing against each other for the same query
+- **[Redirect Mapping Assistant](./prompts/markdown/content-maintenance/redirect-mapping-assistant.md)** - Map a removed page to the right consolidation target
+- **[Refresh vs. Rewrite Assessor](./prompts/markdown/content-maintenance/refresh-vs-rewrite-assessor.md)** - Decide whether a page needs a light refresh or a full rewrite
+- **[Evergreen vs. Time-Sensitive Classifier](./prompts/markdown/content-maintenance/evergreen-vs-time-sensitive-classifier.md)** - Know which posts will age and when to recheck them
+
+[📖 View Details](https://brass-seo.com/blog/content-maintenance-ai-prompts) | [📁 Browse Files](./prompts/markdown/content-maintenance/)
+
+### 🖥️ Platform SEO (6 prompts)
+
+Platform-specific audits for WordPress, Shopify, Squarespace, Webflow, Wix, and Ghost.
+
+- **[WordPress SEO Audit (No Plugin)](./prompts/markdown/platform-seo/wordpress-seo-audit-no-plugin.md)** - Native WordPress settings before assuming a plugin is required
+- **[Shopify SEO Settings Checklist](./prompts/markdown/platform-seo/shopify-seo-settings-checklist.md)** - The store settings that actually move rankings
+- **[Squarespace SEO Workaround Finder](./prompts/markdown/platform-seo/squarespace-seo-workaround-finder.md)** - Genuine platform limits versus fixable settings
+- **[Webflow SEO Launch Checklist](./prompts/markdown/platform-seo/webflow-seo-launch-checklist.md)** - Static pages and CMS collections, launch-ready
+- **[Wix SEO Limits Audit](./prompts/markdown/platform-seo/wix-seo-limits-audit.md)** - What Wix's own tools can and can't fix
+- **[Ghost SEO Built-In vs. Missing Checklist](./prompts/markdown/platform-seo/ghost-seo-built-in-vs-missing-checklist.md)** - What's native versus genuinely missing
+
+[📖 View Details](https://brass-seo.com/blog/platform-seo-ai-prompts) | [📁 Browse Files](./prompts/markdown/platform-seo/)
 
 ## 🔧 Using YAML Formats
 

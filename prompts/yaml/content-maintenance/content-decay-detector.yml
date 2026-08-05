@@ -1,0 +1,54 @@
+metadata:
+  id: "content-decay-detector"
+  title: "Content Decay Detector"
+  category: "content-maintenance"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Reads a GSC trend export and flags pages in a slow, silent decline before it's visible in a single monthly snapshot."
+
+prompt_text: |
+  Read my Google Search Console trend data and flag pages in a slow, silent decline before it's visible in a single monthly snapshot:
+
+  Site: [site URL]
+  GSC Data: [paste 12-month trend export by page — clicks/impressions per month]
+  Pages To Check: [specific URLs, or say "all top 50 by traffic"]
+
+  For each page, calculate:
+  1. TREND DIRECTION — is the page's click trend up, flat, or down over the full period
+  2. DECAY RATE — if declining, what's the month-over-month percentage drop
+  3. DECAY STAGE — early (under 10% cumulative loss), mid (10-30%), late (30%+)
+  4. LIKELY CAUSE — content aging, algorithm update timing, new competitor, or cannibalization from a newer page on the same site
+
+  Rank all declining pages by combined traffic value and decay rate.
+
+  Finish with the 5 pages where catching this now saves the most traffic.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export a 12-month trend by page from GSC Performance"
+  - "List specific URLs to check, or ask for all top 50 by traffic"
+  - "Paste in"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The site being analyzed"
+  - name: "[paste 12-month trend export by page — clicks/impressions per month]"
+    description: "GSC trend export"
+  - name: "[specific URLs, or say \"all top 50 by traffic\"]"
+    description: "Which pages to check"
+
+expected_output: "Each page rated by trend direction, decay rate, decay stage, and likely cause, ranked by combined traffic value and decay rate, ending in a top-5 priority list."
+
+tips:
+  - "A single month-over-month comparison hides slow decay - always use the full trend"
+  - "Decay stage matters more than raw traffic loss"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "refresh-merge-prune-delete-verdict"

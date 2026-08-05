@@ -1,0 +1,55 @@
+metadata:
+  id: "ghost-seo-built-in-vs-missing-checklist"
+  title: "Ghost SEO Built-In vs. Missing Checklist"
+  category: "platform-seo"
+  version: "1.0"
+  created: "2026-08-04"
+
+description: "Audits a Ghost blog against what Ghost handles natively for SEO versus what's genuinely missing and needs a workaround."
+
+prompt_text: |
+  Audit this Ghost blog against what Ghost handles natively for SEO versus what's genuinely missing:
+
+  Site: [site URL]
+  Ghost Theme: [theme name, default Casper or custom]
+  Current Setup: [describe any SEO-related settings changed from default]
+
+  Check these items, noting which are Ghost-native and which require a workaround:
+  1. META TITLE & DESCRIPTION — per-post SEO fields actually filled in
+  2. STRUCTURED DATA — JSON-LD Article schema rendering correctly for this theme
+  3. XML SITEMAP — auto-generated, submitted to GSC
+  4. CANONICAL URLS — automatic, check custom domain/subdirectory setups
+  5. TAG PAGE SEO — indexable and worth it, or should be noindexed
+
+  For each item, state: built-in and already working, built-in but not configured, or genuinely missing.
+
+  Finish with the one setting most solo bloggers on Ghost forget to check.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Note your theme and any SEO settings already changed from default"
+  - "Paste in your site URL"
+  - "Flag any custom domain or subdirectory setup"
+
+placeholders:
+  - name: "[site URL]"
+    description: "The Ghost blog being audited"
+  - name: "[theme name, default Casper or custom]"
+    description: "The active Ghost theme"
+  - name: "[describe any SEO-related settings changed from default]"
+    description: "Current SEO configuration"
+
+expected_output: "Each of 5 Ghost SEO items marked built-in-working, built-in-not-configured, or genuinely missing, ending in the one setting most solo bloggers forget."
+
+tips:
+  - "Ghost handles more SEO natively than most platforms - most gaps are settings left blank"
+  - "Tag archive pages are the most commonly overlooked thin-content risk"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "wix-seo-limits-audit"

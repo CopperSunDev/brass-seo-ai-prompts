@@ -1,0 +1,84 @@
+metadata:
+  id: "keyword-to-content-plan"
+  title: "Keyword to Content Plan"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Turn a raw keyword list into a prioritized content plan with intent grouping, existing coverage checks, striking-distance quick wins, and detailed content briefs."
+
+prompt_text: |
+  You are an SEO content strategist. I will give you a keyword list and information about my website. Your job is to turn this keyword list into a prioritized content plan.
+
+  **My Website:**
+  - Domain: [your domain]
+  - Business type: [what your business does]
+  - Existing pages (paste URLs of your main pages):
+    [list your key page URLs]
+
+  **My Keyword List:**
+  [Paste your keyword list here. If you have GSC data, include the query, impressions, clicks, and average position columns. If you only have keywords and volume, that is fine too.]
+
+  **Your Tasks:**
+
+  1. **Group by intent.** Categorize every keyword as informational, commercial, navigational, or transactional. Explain your reasoning for any ambiguous keywords.
+
+  2. **Check existing coverage.** Based on the page URLs I provided, flag which keywords likely have existing pages and which are content gaps.
+
+  3. **Identify quick wins.** If I provided GSC position data, highlight keywords at positions 8-20 — these are striking-distance opportunities where improving existing content could reach page 1.
+
+  4. **Prioritize.** Rank keyword groups by opportunity: business relevance × search volume × current gap. Explain your prioritization.
+
+  5. **Create content briefs for the top 10 opportunities.** For each:
+     - Recommended content type (blog post, service page, guide, FAQ, etc.)
+     - Target keyword group (primary + related keywords)
+     - Search intent and what the page should deliver
+     - Suggested title (under 60 characters)
+     - Suggested H2 structure (3-5 headings)
+     - Word count estimate
+     - Internal linking suggestions (which of my existing pages should link to/from this content)
+
+  6. **Flag content to improve (not create).** If a keyword is covered by an existing page that could rank higher, say "improve [URL]" instead of "create new page" and explain what to change.
+
+  Format the output as:
+  - Executive summary (3-5 sentences: key findings, biggest opportunities)
+  - Quick wins table (striking-distance keywords)
+  - Content gaps table (keywords with no existing coverage)
+  - Full content briefs (detailed plans for top 10)
+  - "Do not write" list (keywords that are not worth targeting and why)
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export your keyword list from GSC (Performance > Search Results > Export) or from your keyword research tool"
+  - "Gather the URLs of your main pages — homepage, service pages, and top blog posts"
+  - "Paste both into the prompt where indicated"
+  - "Run in ChatGPT, Claude, or any AI tool"
+  - "Review the output, especially the 'improve vs. create' recommendations"
+
+placeholders:
+  - name: "[your domain]"
+    description: "Your website domain"
+  - name: "[what your business does]"
+    description: "Brief description of your business"
+  - name: "[list your key page URLs]"
+    description: "URLs of your main pages (homepage, service pages, top blog posts)"
+  - name: "[Paste your keyword list here...]"
+    description: "Your keyword list with optional GSC data (query, impressions, clicks, position)"
+
+expected_output: "A prioritized content plan with intent grouping, quick wins table, content gaps table, detailed briefs for top 10 opportunities, and a 'do not write' list."
+
+tips:
+  - "The more data you provide, the better the output — GSC exports with impressions and position produce significantly better recommendations"
+  - "If your keyword list has more than 200 keywords, split into 2-3 batches by topic area"
+  - "Do not skip the existing pages input — without it the AI cannot identify content gaps"
+  - "Cross-reference suggestions with your business priorities"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "content-gap-finder"
+    - "keyword-opportunity-finder"

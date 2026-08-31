@@ -1,0 +1,44 @@
+metadata:
+  id: "paa-keyword-candidates"
+  title: "PAA Keyword Candidates"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Analyze GSC data in Brass-SEO to identify the best keywords for a People Also Ask FAQ post. Finds informational keywords likely to trigger PAA boxes."
+
+prompt_text: |
+  Analyze my GSC data and identify my best keywords for a People Also Ask (PAA) FAQ post. Looking for:
+
+  1. Keywords with decent impressions but moderate positions (8–30)
+  2. Informational keywords likely to show PAA boxes (how, what, why, best, guide)
+  3. Keywords that could anchor a 25–30 question FAQ post
+
+  Please identify:
+  - Top 5–10 PAA keyword candidates with current position and impressions
+  - Whether any existing pages already cover these (to avoid cannibalization)
+  - Which keyword has the strongest PAA FAQ post potential
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Paste this prompt into your Brass-SEO chat"
+  - "Brass-SEO will analyze your Google Search Console data to find PAA candidates"
+  - "Take the top keyword result to the PAA FAQ Post Writer prompt"
+
+placeholders: []
+
+expected_output: "A ranked list of 5–10 keywords with positions, impressions, and a recommendation for the strongest PAA FAQ post target."
+
+tips:
+  - "Informational keywords with 1,000+ monthly impressions make the best targets"
+  - "Position 8–30 range offers the most upside from PAA optimization"
+  - "Confirm PAA boxes appear for your keyword by searching in incognito mode"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "paa-faq-post-writer"

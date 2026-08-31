@@ -1,0 +1,69 @@
+metadata:
+  id: "content-gap-finder"
+  title: "Content Gap Finder"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Analyze GSC query data to find keywords you rank for but have no dedicated page about, with striking-distance opportunities and content briefs."
+
+prompt_text: |
+  Analyze this Google Search Console performance data to find content gaps on my site.
+
+  Here is my GSC query export (last 3 months). Each row has: query, clicks, impressions, CTR, average position.
+
+  [PASTE YOUR GSC QUERY EXPORT HERE]
+
+  Here is a list of my site's main pages and their primary topics:
+
+  [PASTE YOUR PAGE LIST HERE — format: URL | Primary Topic/Keyword]
+
+  Analyze the data and find:
+
+  1. CONTENT GAPS (no dedicated page exists)
+     - Queries with 100+ impressions where no page in my list targets this topic
+     - Group related queries into topic clusters (e.g., "emergency plumber cost" and "emergency plumbing rates" are the same topic)
+     - For each gap, show: the query cluster, total impressions, average position, and a suggested page title
+
+  2. STRIKING-DISTANCE OPPORTUNITIES (positions 8-20)
+     - Queries ranking 8-20 with high impressions relative to my site's average
+     - Whether a dedicated page exists or if an existing page covers it weakly
+     - Specific recommendation: create new page, expand existing page, or improve existing page
+
+  3. UNDERPERFORMING PAGES (page exists but CTR is low)
+     - Queries where position is 1-5 but CTR is below 3%
+     - These pages rank well but fail to earn clicks — likely a title tag or meta description issue, not a content gap
+
+  Sort all results by impressions (highest first). For the top 10 content gaps, write a one-sentence content brief describing what the new page should cover.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export your GSC query data: Performance > set date range (last 3 months) > Export"
+  - "Create a simple list of your main pages and their primary topics"
+  - "Paste both into the prompt and run in ChatGPT, Claude, Gemini, or any AI chat tool"
+  - "Review the suggested content gaps and cross-check against your keyword strategy"
+
+placeholders:
+  - name: "[PASTE YOUR GSC QUERY EXPORT HERE]"
+    description: "Your GSC Performance query export for the last 3 months with query, clicks, impressions, CTR, and position"
+  - name: "[PASTE YOUR PAGE LIST HERE — format: URL | Primary Topic/Keyword]"
+    description: "A list of your main pages with their primary topic or target keyword"
+
+expected_output: "Content gaps grouped by topic cluster with impressions and suggested page titles, striking-distance opportunities with specific recommendations, and underperforming pages with CTR issues."
+
+tips:
+  - "Use 3 months of data instead of 1 month to smooth out seasonal fluctuations"
+  - "Focus on queries with 100+ impressions"
+  - "Group related queries before creating pages"
+  - "Run this analysis quarterly to catch new gaps"
+  - "Gap queries at position 40+ may need topical authority before a dedicated page will rank"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "keyword-opportunity-finder"
+    - "keyword-to-content-plan"

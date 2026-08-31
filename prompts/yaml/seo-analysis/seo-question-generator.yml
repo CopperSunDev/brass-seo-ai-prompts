@@ -1,0 +1,85 @@
+metadata:
+  id: "seo-question-generator"
+  title: "SEO Question Generator"
+  category: "seo-analysis"
+  version: "1.0"
+  created: "2026-02-09"
+
+description: "Generate 15-20 tailored SEO questions for your business to ask any AI SEO analysis tool."
+
+prompt_text: |
+  Generate a list of 15-20 specific SEO questions I should ask about my website, tailored to my business type and goals.
+
+  Website: [your website URL]
+  Business Type: [e.g., local plumber, online store, SaaS company, restaurant, law firm, freelancer]
+  Main Pages: [list your 3-5 most important pages, e.g., /services, /pricing, /blog, /contact]
+  Current SEO Knowledge: [beginner, intermediate, or advanced]
+  Main Goal: [e.g., more local customers, more online sales, more blog traffic, better conversions]
+
+  Generate questions organized into these categories:
+
+  1. TRAFFIC & TRENDS (4-5 questions)
+     - Questions about overall traffic direction
+     - Period-over-period comparisons
+     - Channel-specific traffic questions
+     - Seasonal or trend-related questions
+
+  2. PAGE PERFORMANCE (3-4 questions)
+     - Questions about specific important pages
+     - Questions comparing pages against each other
+     - Questions about engagement and user behavior on key pages
+
+  3. KEYWORD OPPORTUNITIES (3-4 questions)
+     - Questions about ranking positions and potential
+     - Questions about keyword gaps and new content ideas
+     - Questions about competitor-adjacent keywords
+
+  4. TECHNICAL HEALTH (2-3 questions)
+     - Questions about indexing status
+     - Questions about crawl issues or errors
+     - Questions about page speed or mobile issues
+
+  5. STRATEGIC PRIORITIES (3-4 questions)
+     - Questions about where to focus effort this month
+     - Questions about quick wins vs long-term projects
+     - Questions about what is working vs what needs attention
+
+  Make each question specific to my business type and pages. Avoid generic questions — include my actual page URLs and business context in the questions. Write them so I can paste each one directly into an SEO analysis tool.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Replace placeholders with your business details"
+  - "Paste into ChatGPT, Claude, or any AI tool"
+  - "Review generated questions and pick the most relevant ones"
+  - "Paste each question into Brass-SEO's chat to get answers"
+  - "Use answers to build your SEO action plan"
+
+placeholders:
+  - name: "[your website URL]"
+    description: "Your website's URL"
+  - name: "[Business Type]"
+    description: "Your industry or business model"
+  - name: "[Main Pages]"
+    description: "Your 3-5 most important pages with paths"
+  - name: "[Current SEO Knowledge]"
+    description: "Your comfort level with SEO (beginner, intermediate, advanced)"
+  - name: "[Main Goal]"
+    description: "Your primary objective (more traffic, conversions, local visibility, etc.)"
+
+expected_output: "15-20 specific, business-tailored SEO questions organized into 5 categories, ready to paste directly into an SEO analysis tool."
+
+tips:
+  - "Run this whenever you are not sure what to check next"
+  - "Update business details and re-run quarterly as your site evolves"
+  - "Beginners: start with Traffic and Strategic Priorities questions first"
+  - "Pair with SEO Report Action Plan prompt for organized task lists"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "seo-report-action-plan"
+    - "ga4-traffic-analysis"

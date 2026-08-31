@@ -1,0 +1,83 @@
+metadata:
+  id: "seo-report-action-plan"
+  title: "SEO Report Action Plan"
+  category: "seo-analysis"
+  version: "1.0"
+  created: "2026-02-09"
+
+description: "Turn any SEO report into a prioritized action plan with specific fixes, timelines, and monitoring steps."
+
+prompt_text: |
+  Analyze the following SEO report data and create a prioritized action plan I can execute this month.
+
+  Website: [your website URL]
+  Report Type: [e.g., full site analysis, opportunities report, declining pages, page audit]
+  Time Period: [e.g., last 30 days, last quarter]
+  Business Priority: [e.g., more traffic, better conversions, fix technical issues]
+
+  Report Data (paste your report output or key findings):
+  [Paste your report data here — this can be raw data, a summary, or key metrics]
+
+  Please create:
+
+  1. CRITICAL FIXES (do this week)
+     - Issues that are actively hurting your SEO
+     - Pages blocked from indexing, server errors, broken redirects
+     - For each: what to fix, how to fix it, how to verify the fix worked
+
+  2. HIGH-IMPACT IMPROVEMENTS (do this month)
+     - Changes with the biggest expected traffic increase
+     - Title tag and meta description rewrites for high-impression pages
+     - Content updates for declining pages
+     - For each: specific changes to make, expected impact, effort level
+
+  3. GROWTH OPPORTUNITIES (next 30-60 days)
+     - New content to create based on keyword gaps
+     - Internal linking improvements
+     - Pages to consolidate or expand
+     - For each: what to create or change, target keywords, estimated effort
+
+  4. MONITORING PLAN
+     - Which metrics to track weekly
+     - What to check after implementing fixes
+     - When to re-run this analysis
+     - Warning signs that need immediate attention
+
+  Order everything by expected impact (highest first). Be specific — include exact page URLs, keyword targets, and measurable goals where possible.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Run any SEO report (Full Analysis, Opportunities, Declining Pages, etc.)"
+  - "Copy the report findings or key data points"
+  - "Paste into the prompt along with your website details"
+  - "The AI creates a structured action plan organized by priority and timeline"
+
+placeholders:
+  - name: "[your website URL]"
+    description: "Your website's URL"
+  - name: "[Report Type]"
+    description: "The type of SEO report you ran"
+  - name: "[Time Period]"
+    description: "The time range the report covers"
+  - name: "[Business Priority]"
+    description: "Your main SEO goal right now"
+  - name: "[Report Data]"
+    description: "Paste your actual report output or key findings"
+
+expected_output: "A prioritized action plan with critical fixes, high-impact improvements, growth opportunities, and a monitoring plan — each with specific steps and timelines."
+
+tips:
+  - "Include as much report data as possible for more specific recommendations"
+  - "Mention business priorities so the AI can weight recommendations"
+  - "Run this monthly to keep your action plan current"
+  - "Pair with the DIY SEO Audit Checklist for comprehensive quarterly reviews"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "ga4-traffic-analysis"
+    - "diy-seo-audit-checklist"

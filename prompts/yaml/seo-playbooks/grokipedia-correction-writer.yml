@@ -1,0 +1,63 @@
+metadata:
+  id: "grokipedia-correction-writer"
+  title: "Grokipedia Correction Writer"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Write a Grokipedia correction submission in the accepted format to earn a high-DA backlink from X's AI encyclopedia."
+
+prompt_text: |
+  Write a Grokipedia correction submission to earn a backlink.
+
+  Current Grokipedia text: [paste the exact inaccurate/outdated text]
+  Why it's wrong: [outdated / unsourced / vague / incorrect]
+  My source URL: [URL of your authoritative page]
+  Correct information: [paste the accurate information from your page]
+
+  Format the submission:
+
+  Title: [Brief description of what's being corrected]
+
+  Issue: [Exact text that needs correction — quote it]
+
+  Fix: [Corrected or enhanced text with specific data]
+
+  Supporting Evidence: [Your URL] — [One sentence: why this source is authoritative]
+
+  Keep it neutral, encyclopedic, and factual. No marketing language.
+  The tone should sound like an encyclopedia editor, not a marketer.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Find an error on a Grokipedia entry in your industry"
+  - "Write or update a page on your site with the correct, authoritative information"
+  - "Fill in the placeholders and run in ChatGPT or Claude.ai"
+  - "Submit via the 'Suggest Edit' button on the Grokipedia entry (not 'It's Wrong')"
+
+placeholders:
+  - name: "[paste the exact inaccurate/outdated text]"
+    description: "Quote the exact text from Grokipedia that contains the error"
+  - name: "[outdated / unsourced / vague / incorrect]"
+    description: "The type of error"
+  - name: "[URL of your authoritative page]"
+    description: "Your source URL that corrects the error"
+  - name: "[paste the accurate information from your page]"
+    description: "The correct information from your page"
+
+expected_output: "A properly formatted Grokipedia correction submission with Title, Issue, Fix, and Supporting Evidence sections in neutral encyclopedic tone."
+
+tips:
+  - "Submit no more than 2–3 corrections per week to avoid gaming detection"
+  - "Use neutral, encyclopedic language — avoid any promotional tone"
+  - "Corrections for outdated pricing, vague statistics, and missing context get accepted most often"
+  - "Your source page must genuinely correct the error — never fabricate opportunities"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "grokipedia-opportunity-finder"

@@ -1,0 +1,47 @@
+metadata:
+  id: "press-release-angle-finder"
+  title: "Press Release Angle Finder"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Identify the best newsworthy angle for a press release from your site data. Surfaces milestones, original research, and launch announcements worth distributing through PRLog."
+
+prompt_text: |
+  Help me find the best newsworthy angle for a press release to earn backlinks.
+
+  Using my site and traffic data, identify:
+  1. Milestones worth announcing (traffic growth, content output, time in business)
+  2. Content I've published that contains original data, surveys, or research
+  3. Features, services, or products I've launched recently
+
+  For each angle:
+  - What's the headline?
+  - Is this genuinely newsworthy?
+  - Which pages should I link to (up to 5 with PRLog Premium)?
+  - What target keywords should appear naturally in the first paragraph?
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Paste this prompt into your Brass-SEO chat"
+  - "Brass-SEO will analyze your site data to surface announcement candidates"
+  - "Choose the strongest angle and use the Press Release Writer prompt to draft the release"
+  - "Distribute via PRLog.org Premium ($49/release, up to 5 links)"
+
+placeholders: []
+
+expected_output: "A list of 3–5 newsworthy angles with suggested headlines, newsworthiness assessment, recommended link targets, and target keywords for each."
+
+tips:
+  - "Milestones don't need to be dramatic — first 100 customers, 1 year in business, new service launch all work"
+  - "Original data or research makes the strongest press release angle"
+  - "Identify your 5 most valuable pages to link before writing the release"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "press-release-writer"

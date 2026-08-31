@@ -1,0 +1,66 @@
+metadata:
+  id: "seo-health-check"
+  title: "SEO Health Check"
+  category: "seo-analysis"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Analyze GSC and GA4 data to determine whether your SEO is working, with a verdict and prioritized action items."
+
+prompt_text: |
+  Analyze my SEO performance data and tell me whether my SEO is working.
+
+  GSC Performance Data (last 28 days vs previous 28 days):
+  [Paste your GSC Performance export — queries, pages, clicks, impressions, CTR, position for both periods]
+
+  GA4 Traffic Data:
+  - Organic sessions this period: [number]
+  - Organic sessions previous period: [number]
+  - Top organic landing pages with engagement rates: [paste from GA4 Landing Page report, filtered to Organic Search]
+
+  Analyze these four signals:
+
+  1. **Organic Traffic Trend**: Are organic sessions growing, stable, or declining? By what percentage?
+  2. **Keyword Positions**: Which target keywords moved significantly (3+ positions)? Which direction?
+  3. **Click-Through Rate**: Are any pages with 500+ impressions showing CTR below expected for their position? (Position 1: 20-35%, Position 2: 10-18%, Position 3: 7-12%, Position 4-5: 4-8%)
+  4. **Landing Page Engagement**: Are any high-traffic organic pages showing engagement rates significantly below the site average?
+
+  Provide:
+  - An overall verdict: Improving, Stable, or Declining
+  - The strongest signal (best-performing area)
+  - The biggest concern (area needing attention)
+  - Three specific actions to take this month, prioritized by expected impact
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Export your GSC Performance report for the last 28 days (compare to previous 28 days)"
+  - "Open GA4 > Traffic Acquisition, note organic sessions for both periods"
+  - "Open GA4 > Landing Page with an Organic Search filter, copy the top 10-15 pages with engagement rates"
+  - "Paste everything into the prompt and run in ChatGPT, Claude, or any AI tool"
+  - "Review the verdict and action items"
+
+placeholders:
+  - name: "[Paste your GSC Performance export...]"
+    description: "Your GSC Performance data for both 28-day periods (queries, pages, clicks, impressions, CTR, position)"
+  - name: "[number]"
+    description: "Organic sessions count from GA4 Traffic Acquisition report"
+  - name: "[paste from GA4 Landing Page report...]"
+    description: "Top organic landing pages with engagement rates from GA4"
+
+expected_output: "An overall verdict (Improving/Stable/Declining), strongest signal, biggest concern, and three specific prioritized actions for the month."
+
+tips:
+  - "Run this check monthly on the same day for consistent comparisons"
+  - "Export GSC data by both Queries and Pages — the prompt uses both views"
+  - "If a keyword dropped 5+ positions, check competitor activity or SERP layout changes"
+  - "Seasonal businesses should compare to the same month last year"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "declining-pages-analyzer"
+    - "ga4-traffic-analysis"

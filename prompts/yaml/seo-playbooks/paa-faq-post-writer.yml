@@ -1,0 +1,58 @@
+metadata:
+  id: "paa-faq-post-writer"
+  title: "PAA FAQ Post Writer"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Write a comprehensive FAQ post targeting Google's People Also Ask boxes. Takes real PAA questions collected from Google SERP research and creates a structured, schema-ready post."
+
+prompt_text: |
+  I'm creating a People Also Ask FAQ post to rank in Google's PAA boxes.
+
+  Target keyword: [from your Brass-SEO analysis]
+  PAA questions I collected from Google: [paste 25–30 real questions from SERP research]
+  My existing posts to reference: [list any relevant posts to link from answers]
+
+  Write a complete FAQ post:
+  - Title: "[Topic] Questions Answered: [N]+ Expert Solutions"
+  - 2-paragraph intro establishing topical authority
+  - Quick navigation section with anchor links
+  - Each question as an H2 heading (exact PAA wording from Google)
+  - 150–300 word answer per question
+  - Internal links where appropriate
+  - FAQ schema JSON-LD at the end
+
+  Use the exact question wording from Google PAA boxes — do not rewrite them.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Run the PAA Keyword Candidates prompt in Brass-SEO first to identify your target keyword"
+  - "Search that keyword in Google (incognito) and collect 25–30 PAA questions by clicking through cascades"
+  - "Paste those real questions into this prompt along with your existing posts"
+  - "Run in ChatGPT, Claude.ai, or any AI tool"
+
+placeholders:
+  - name: "[from your Brass-SEO analysis]"
+    description: "The target keyword identified by Brass-SEO"
+  - name: "[paste 25–30 real questions from SERP research]"
+    description: "Real PAA questions collected from Google searches"
+  - name: "[list any relevant posts to link from answers]"
+    description: "URLs of existing posts to cross-link within answers"
+
+expected_output: "A complete FAQ post with title, intro, quick navigation, H2 questions with 150–300 word answers, internal links, and FAQ schema JSON-LD."
+
+tips:
+  - "Collect questions manually from Google — never let the AI guess PAA questions"
+  - "Click each PAA question to reveal 4 more (cascade effect)"
+  - "Aim for 25–30 unique questions per post for maximum PAA coverage"
+  - "Target 10,000+ words for the strongest topical authority signal"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "paa-keyword-candidates"

@@ -1,0 +1,74 @@
+metadata:
+  id: "title-tag-writer"
+  title: "Title Tag Writer"
+  category: "content-optimization"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Generate optimized title tags using actual GSC search data, with character counts and CTR impact estimates."
+
+prompt_text: |
+  Write optimized title tags for my website pages using my actual search data.
+
+  Pages to optimize (from GSC Performance > Pages report):
+  [Paste your top pages with: URL, current title tag, clicks, impressions, CTR, average position]
+
+  Top queries per page (from GSC Performance > Queries, filtered by page):
+  [For each page above, paste the top 5 queries with impressions and position]
+
+  Business name: [your business name]
+  Business type: [what you do]
+  Location (if local): [city/state, or skip if not local]
+
+  For each page, generate 3 title tag options that:
+  - Stay under 60 characters (count each one)
+  - Lead with the highest-impression keyword from that page's actual GSC query data
+  - Include a benefit, hook, or specificity that differentiates from competitors
+  - Place the brand name at the end after a separator (| or -)
+  - Match the page's search intent (informational, commercial, navigational)
+
+  For each option, provide:
+  1. The title tag text
+  2. Exact character count
+  3. Which GSC query it targets and why
+  4. Expected CTR impact (based on whether the current title misses the top query)
+
+  Then recommend which option is best for each page and explain why.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Open GSC > Performance > Pages. Export your top 10-20 pages by impressions"
+  - "For each page, click through to see which queries drive impressions to it"
+  - "Check each page's current title tag (view source or site: search)"
+  - "Paste everything into the prompt and run in ChatGPT, Claude, or any AI tool"
+  - "Review the suggestions and update your title tags in your CMS or HTML"
+
+placeholders:
+  - name: "[Paste your top pages with: URL, current title tag, clicks, impressions, CTR, average position]"
+    description: "Your GSC Performance Pages export with current title tags"
+  - name: "[For each page above, paste the top 5 queries with impressions and position]"
+    description: "Per-page query data from GSC (filter by page, then export top queries)"
+  - name: "[your business name]"
+    description: "Your business name for the brand suffix"
+  - name: "[what you do]"
+    description: "Brief description of your business"
+  - name: "[city/state, or skip if not local]"
+    description: "Your location if you serve a local market"
+
+expected_output: "3 title tag options per page with character counts, target query rationale, and CTR impact estimates, plus a recommended best option for each."
+
+tips:
+  - "Focus on pages with high impressions but low CTR first"
+  - "If a page's top query does not appear in its current title, that is almost always worth fixing"
+  - "Do not change titles on pages already performing well"
+  - "After changing a title, wait 2-4 weeks before judging results"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "meta-description-writer"
+    - "title-meta-description-generator"

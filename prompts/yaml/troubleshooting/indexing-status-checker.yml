@@ -1,0 +1,94 @@
+metadata:
+  id: "indexing-status-checker"
+  title: "Indexing Status Checker"
+  category: "troubleshooting"
+  version: "1.0"
+  created: "2026-03-25"
+
+description: "Diagnose why pages are not appearing in Google search results with a structured crawl, index, and content analysis plus a prioritized fix plan."
+
+prompt_text: |
+  Diagnose why the following page(s) are not appearing in Google search results and provide specific fixes:
+
+  Website: [your website URL]
+  Problem Page(s): [URL(s) of pages not showing in Google]
+  CMS/Platform: [e.g., WordPress, Shopify, Next.js, custom]
+  How Long Ago Published: [e.g., 2 days, 2 weeks, 3 months]
+
+  Information I have (include what you know):
+  - robots.txt URL: [yoursite.com/robots.txt]
+  - Does the page have a noindex tag? [yes/no/unsure]
+  - Is the page in your XML sitemap? [yes/no/unsure]
+  - Does the page have internal links pointing to it? [yes/no/unsure]
+  - GSC URL Inspection result: [paste result if available, or "not checked"]
+  - Any recent site changes: [migration, redesign, domain change, etc.]
+
+  Please diagnose:
+
+  1. CRAWL ISSUES
+     - Can Googlebot access the page? (robots.txt, server blocks, IP restrictions)
+     - Are there redirect chains or loops?
+     - Is the page reachable from internal links and sitemap?
+
+  2. INDEX ISSUES
+     - Is a noindex tag or header present?
+     - Is there a canonical tag pointing elsewhere?
+     - Is the content too thin or duplicate of another page?
+     - Are there crawl budget concerns for this site size?
+
+  3. CONTENT ISSUES
+     - Does the page provide unique value?
+     - Is the content substantially different from other pages on the site?
+     - Does the page target a clear search intent?
+
+  4. FIX PLAN
+     - For each issue found, provide the specific fix
+     - Order fixes by priority (most likely cause first)
+     - Include how to verify each fix worked
+     - Estimate time for Google to re-index after fixes
+
+  If you cannot determine the cause from the information provided, list what additional information would help narrow it down.
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Open Google Search Console and run the URL Inspection tool on each problem page"
+  - "Copy the status and any details into the prompt's GSC URL Inspection result field"
+  - "Fill in as much additional context as you can"
+  - "Paste into ChatGPT, Claude, or any AI tool"
+  - "Follow the prioritized fix plan, starting with the most likely cause"
+
+placeholders:
+  - name: "[your website URL]"
+    description: "Your website's domain URL"
+  - name: "[URL(s) of pages not showing in Google]"
+    description: "The specific page URLs that are not indexed"
+  - name: "[e.g., WordPress, Shopify, Next.js, custom]"
+    description: "Your website's CMS or platform"
+  - name: "[e.g., 2 days, 2 weeks, 3 months]"
+    description: "How long ago the problem pages were published"
+  - name: "[yoursite.com/robots.txt]"
+    description: "URL to your robots.txt file"
+  - name: "[yes/no/unsure]"
+    description: "Whether you know the answer to each diagnostic question"
+  - name: "[paste result if available, or \"not checked\"]"
+    description: "The GSC URL Inspection result for the problem page"
+  - name: "[migration, redesign, domain change, etc.]"
+    description: "Any recent changes to your site that may affect indexing"
+
+expected_output: "A structured diagnosis covering crawl issues, index issues, and content issues, with a prioritized fix plan including verification steps and re-indexing time estimates."
+
+tips:
+  - "List multiple problem pages in a single prompt to reveal site-wide patterns"
+  - "Include your robots.txt content if you suspect crawl blocking"
+  - "Mention any recent site changes like migrations or CMS updates"
+  - "For pages stuck in Discovered -- currently not indexed, focus on adding internal links"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/ai-prompts-guide-for-seo"
+  related_prompts:
+    - "indexing-issue-diagnosis"
+    - "comprehensive-site-audit"

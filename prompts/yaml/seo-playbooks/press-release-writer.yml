@@ -1,0 +1,70 @@
+metadata:
+  id: "press-release-writer"
+  title: "Press Release Writer"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Write a PRLog.org-ready press release in proper news-style format with UTM tracking. Distributes to Google News, Yahoo Finance, and 100+ sites for 15-30 permanent backlinks."
+
+prompt_text: |
+  Write a press release for PRLog.org Premium distribution.
+
+  Company: [company name]
+  Location: [city, state]
+  Announcement: [your newsworthy angle]
+  Key facts: [2–3 specific facts, numbers, or data points]
+  Links to include (up to 5):
+    1. Homepage — [URL]
+    2. Main landing page — [URL]
+    3–5. [Additional relevant pages]
+  Target keyword: [primary keyword to place in first paragraph]
+
+  Write a 400–500 word press release:
+  - Open with: [City, Date] — [Company] [verb] [what happened]
+  - Professional, factual, third-person, news-style
+  - No promotional language ("amazing", "revolutionary", "best")
+  - Include a quote attributed to [Name], [Title]
+  - End with an "About [Company]" boilerplate paragraph
+  - Contact block with name, email, website
+
+  Add UTM tracking to all links:
+  ?utm_source=prlog&utm_medium=press-release&utm_campaign=[campaign-name]
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Run the Press Release Angle Finder prompt in Brass-SEO first to find your newsworthy angle"
+  - "Fill in all placeholders with your company details, announcement, and links"
+  - "Run in ChatGPT or Claude.ai to generate the draft"
+  - "Review for accuracy then submit to PRLog.org via their Premium plan ($49/release)"
+
+placeholders:
+  - name: "[company name]"
+    description: "Your company or brand name"
+  - name: "[city, state]"
+    description: "Your company's location for the dateline"
+  - name: "[your newsworthy angle]"
+    description: "The announcement identified by the Press Release Angle Finder"
+  - name: "[2–3 specific facts, numbers, or data points]"
+    description: "Verifiable facts that support the announcement"
+  - name: "[URL]"
+    description: "URLs of the pages to link (up to 5 total)"
+  - name: "[primary keyword to place in first paragraph]"
+    description: "The target SEO keyword for the release"
+
+expected_output: "A 400–500 word press release with proper news-style format, UTM-tracked links, and a quote. Ready to submit to PRLog.org Premium."
+
+tips:
+  - "Never use promotional language — PRLog editors will reject it"
+  - "400–500 words is the ideal length for syndication"
+  - "Always add UTM parameters to track traffic in GA4"
+  - "Submit one press release per newsworthy event — do not manufacture news"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "press-release-angle-finder"

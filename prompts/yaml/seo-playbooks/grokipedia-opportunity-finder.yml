@@ -1,0 +1,48 @@
+metadata:
+  id: "grokipedia-opportunity-finder"
+  title: "Grokipedia Opportunity Finder"
+  category: "seo-playbooks"
+  version: "1.0"
+  created: "2026-02-18"
+
+description: "Identify which pages on your site contain authoritative, factual content that could support a Grokipedia correction backlink submission."
+
+prompt_text: |
+  Help me find Grokipedia link building opportunities using my site data.
+
+  Identify content on my site that is authoritative enough to serve as a correction source:
+  1. Pages with specific factual data, statistics, or original research
+  2. Pages with authoritative technical explanations or process documentation
+  3. Content that makes verifiable, specific claims (not marketing language)
+
+  For each candidate page:
+  - What factual claim does it contain?
+  - How verifiable/specific is the data?
+  - What kind of Grokipedia correction could this support?
+
+  What industry topics in my niche might have outdated or unsourced Grokipedia entries?
+
+  ---
+  Prompt by Brass-SEO (brass-seo.com)
+  ---
+
+usage:
+  - "Paste this prompt into your Brass-SEO chat"
+  - "Brass-SEO will scan your crawled pages for authoritative, factual content"
+  - "Take the page suggestions and search Grokipedia for related entries with errors"
+  - "Use the Grokipedia Correction Writer prompt to draft your submission"
+
+placeholders: []
+
+expected_output: "A list of candidate pages with their authoritative claims, plus suggested Grokipedia topics in your niche worth researching for correction opportunities."
+
+tips:
+  - "Pages with statistics, pricing data, or original research make the strongest correction sources"
+  - "Search Grokipedia (grok.com) for topics in your niche before checking your content"
+  - "Outdated software pricing and vague industry statistics are the most common correction opportunities"
+
+resources:
+  website: "https://brass-seo.com"
+  guide: "https://brass-seo.com/blog/seo-playbook-ai-prompts"
+  related_prompts:
+    - "grokipedia-correction-writer"

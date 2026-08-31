@@ -6,7 +6,7 @@ Claude-specific technical SEO prompt. Designed for Claude's 200k context window 
 
 ## The Prompt
 
-See full prompt with How to Use and Tips at: https://brass-seo.com/blog/claude-prompts-technical-seo#hreflang-canonicals-review
+See full prompt with How to Use and Tips at: https://brass-seo.com/blog/claude-prompts-technical-seo#hreflang-and-canonicals-review
 
 ## Related Resources
 
